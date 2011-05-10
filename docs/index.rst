@@ -33,10 +33,12 @@ do a pull request.
    conferencecalls
    documentation
    others
+   who
    mozilla
 
 Todo
 ----
-
+* port this document - http://etherpad.mozilla.org:9000/webdev-bootcamp
 * Link to the github repo for forking.
-
+* Link to jsocol's continuous deployment doc
+* Link to IT Requests
