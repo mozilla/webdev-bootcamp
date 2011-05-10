@@ -3,18 +3,40 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Webdev Bootcamp's documentation!
-===========================================
+Webdev Bootcamp
+===============
 
-Contents:
+Web development at Mozilla can be
+challenging.
+This collection of documents will
+serve as an orientation and reference to
+web development at Mozilla.
+
+This documentation is in Github,
+so if you find any mistakes,
+please fork it and
+do a pull request.
 
 .. toctree::
    :maxdepth: 2
 
-Indices and tables
-==================
+   devprocess
+   localdev
+   servers
+   bugzilla
+   git
+   hudson
+   coding
+   data
+   irc
+   email
+   conferencecalls
+   documentation
+   others
+   mozilla
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+Todo
+----
+
+* Link to the github repo for forking.
 
