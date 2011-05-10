@@ -29,6 +29,7 @@ developed and placed in
 production immediately.
 
 .. index:: bugs, bugs;cycle, milestones
+.. _bug-life:
 
 A Bugs Life
 -----------

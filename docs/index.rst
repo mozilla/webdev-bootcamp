@@ -22,12 +22,13 @@ do a pull request.
 
    devprocess
    localdev
-   servers
    bugzilla
    git
    hudson
    coding
    data
+   servers
+   environments
    irc
    email
    conferencecalls
@@ -42,3 +43,4 @@ Todo
 * Link to the github repo for forking.
 * Link to jsocol's continuous deployment doc
 * Link to IT Requests
+* Link to a bugs life

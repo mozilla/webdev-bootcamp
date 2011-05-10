@@ -8,6 +8,11 @@ Developing locally
 allows you to be able to work anywhere without relying on
 network connectivity or being.
 
+.. index::
+   single: mac
+   single: osx
+   pair: git;installation
+
 Homebrew (Mac OS X)
 -------------------
 
@@ -16,7 +21,7 @@ Therefore we recommend Homebrew_.
 Almost all the required development tools can be acquired via ``brew``:
 
 * git
-* sphinx
+* sphinx search
 * mysql
 * redis
 * memcached
@@ -27,3 +32,12 @@ compile, you can create your own recipes.
 
 
 .. _Homebrew: https://github.com/mxcl/homebrew/
+
+
+Homework
+--------
+
+Install Homebrew_ and
+install ``git``, ``sphinx``, ``mysql`` and ``python-2.7``.
+You'll need at least these items
+for most projects.
