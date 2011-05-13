@@ -1,4 +1,5 @@
 .. index:: irc;jenkins
+.. _ci:
 
 Jenkins: Continuous Integration
 ===============================
