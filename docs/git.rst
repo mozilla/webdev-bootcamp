@@ -120,7 +120,7 @@ Note:
 Development Process
 -------------------
 
-See :ref:bug-life
+See :ref:`bug-life`
 
 Looking at someone's code
 ~~~~~~~~~~~~~~~~~~~~~~~~~
