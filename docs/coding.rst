@@ -41,6 +41,9 @@ certainty that
 the code is correct to the best of our knowledge.
 See :ref:`ci`.
 
+
+.. _python:
+
 Python
 ------
 
@@ -69,48 +72,62 @@ Use single quotes unless you need double (or triple) quotes::
 
     '''nobody really does this'''
 
-Breaking lines::
 
+.. _PEP8: http://www.python.org/dev/peps/pep-0008/
+.. _check.py: https://github.com/jbalogh/check.py
+.. _Pocoo: http://www.pocoo.org/internal/styleguide/
 
 Django
 ------
+
+Follow :ref:`python`.  There are a few things in Django that will make your
+life easier:
+
+Use ``resolve('myurl')`` and ``{{ url('myurl') }}`` when linking to internal
+URLs.
+This will handle hosts, relative host names, changed end points for you.  It
+will also noticably break so dead-links don't linger in your code.
+
+.. highlight:: jinja
+
+Indentation within templates should be handled as such::
+
+  {% if indenting %}
+    <p>This is how it's done</p>
+  {% endif %}
+
 Playdoh
 ~~~~~~~
+
+New web-apps should be spawned from Playdoh_ and existing ones should follow
+the spirit of Playdoh_.  Playdoh_ collects lessons that several Mozilla Django
+projects have learned and wraps them into a single Django project template.
+
+In the future,
+much of Playdoh_'s
+moving parts (Middleware, filters, etc) will be moved into a separate
+library so these features won't be lost.
+
+.. _Playdoh: https://github.com/mozilla/playdoh
+
 Javascript
 ----------
+
+* Use JSLint_.
+* Write QUnit tests when possible.
+* Do not write JS in the HTML.
+* Prefer single quotes over double.
+
+.. _JSLint: http://www.jslint.com/
+
 HTML
 ----
-CSS
----
 
+* Use the HTML5
+* Make sure your code validates.
+* No CSS or JS in the HTML
+* Be semantic
+* Use doublequotes for attributes::
 
-    single quotes unless you need double or triple quotes
-
-
-
-    django
-
-    templates
-
-    always use {{ url }} for internal links
-
-    indentation within code
-
-    playdoh
-
-    javascript
-
-    jquery
-
-    html
-
-    No CSS/JS in your HTML
-
-* python
-    - pep8
-    - check.py
-    - tests w/ commits
-* javascript
-   - jslint
-   - testing with Qunit and jstestnet (CI)
-
+    <a href="#">Good</a>
+    <a href='#'>Less Good</a>
