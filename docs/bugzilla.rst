@@ -16,7 +16,7 @@ email notifications for specific components
 you must follow the appropriate
 `QA contacts`_.
 
-.. _`QA contacts`: http://mzl.la/qacontact
+.. _`QA contacts`: https://bugzilla.mozilla.org/describecomponents.cgi
 
 In order to let easily autocomplete usernames enter your name as: ::
 
@@ -34,13 +34,15 @@ IT Requests
 `IT requests`_ are a special type of bug that the IT team can follow up.  You
 can file a request for Website pushes as well as Desktop support.
 
-.. _`IT requests`: http://mzl.la/itrequest
+.. _`IT requests`: https://bugzilla.mozilla.org/enter_bug.cgi?product=mozilla.org&format=itrequest
 
 Searches
 --------
 
 Searches in Bugzilla_ can be saved.  You can also share searches with others
 and you can keep other people's shared searches in your Bugzilla view.
+
+.. _bugzilla-api:
 
 Making life better
 ------------------

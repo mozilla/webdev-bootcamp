@@ -33,7 +33,6 @@ production immediately.
 
 A Bugs Life
 -----------
-
 * Most of our work is encapsulated in Bugzilla_.
 * Bugs represent tasks (bugs or enhancements).
 * A developer lead will typically group the bugs into milestones.
