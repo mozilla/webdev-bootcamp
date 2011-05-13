@@ -58,7 +58,7 @@ for Zamboni_. ::
 
     origin	git@github.com:jbalogh/zamboni.git
 
-.. _Zamboni: http://github.com/jbalogh/zamboni
+.. _Zamboni: https://github.com/jbalogh/zamboni
 
 You will want your ``.gitconfig`` to have the following::
 

@@ -24,7 +24,7 @@ do a pull request.
    localdev
    bugzilla
    git
-   hudson
+   jenkins
    coding
    data
    servers
