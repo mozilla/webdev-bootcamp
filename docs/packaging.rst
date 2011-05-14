@@ -61,6 +61,7 @@ the web heads.
 Upgrading Libraries
 -------------------
 To keep up-to-date, one should occassionally do::
+
   pip install --upgrade -r requirements/compiled.txt
   pushd vendor
   git submodule --update --init
