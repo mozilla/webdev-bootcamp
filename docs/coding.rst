@@ -108,6 +108,7 @@ much of Playdoh_'s
 moving parts (Middleware, filters, etc) will be moved into a separate
 library so these features won't be lost.
 
+See :ref:`packaging`
 .. _Playdoh: https://github.com/mozilla/playdoh
 
 Javascript

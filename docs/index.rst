@@ -26,6 +26,7 @@ do a pull request.
    git
    jenkins
    coding
+   packaging
    data
    servers
    environments
@@ -43,4 +44,6 @@ Todo
 * Link to the github repo for forking.
 * Link to jsocol's continuous deployment doc
 * Link to IT Requests
-* Link to a bugs life
+* Intersphinx
+* Add indexes everywhere.
+* Use better examples for packaging.
