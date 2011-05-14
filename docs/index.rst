@@ -46,4 +46,3 @@ Todo
 * Link to IT Requests
 * Intersphinx
 * Add indexes everywhere.
-* Use better examples for packaging.
