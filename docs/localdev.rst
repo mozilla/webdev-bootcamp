@@ -25,7 +25,7 @@ Almost all the required development tools can be acquired via ``brew``:
 * mysql
 * redis
 * memcached
-* python-2.7
+* python
 
 If you need something that ``brew`` doesn't support, but you could otherwise
 compile, you can create your own recipes.
@@ -38,6 +38,6 @@ Homework
 --------
 
 Install Homebrew_ and
-install ``git``, ``sphinx``, ``mysql`` and ``python-2.7``.
+install ``git``, ``sphinx``, ``mysql`` and ``python``.
 You'll need at least these items
 for most projects.
