@@ -29,7 +29,6 @@ do a pull request.
    packaging
    data
    servers
-   environments
    irc
    email
    conferencecalls
@@ -46,3 +45,7 @@ Todo
 * Link to IT Requests
 * Intersphinx
 * Add indexes everywhere.
+* See if the anonymize directory is correct.
+* Verify that the slave db is correct.
+* screen shots
+* explain data centers - http://blog.mozilla.com/mrz/2010/01/04/mozillas-new-phoenix-data-center/
