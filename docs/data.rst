@@ -32,6 +32,23 @@ anonymized dumps of production data for:
 
 While the datasets are anonymous, they are not for general distribution.
 
+
+Input Data
+~~~~~~~~~~
+
+.. highlight:: bash
+
+You can get a copy of the Firefox Input database by running the following::
+
+        FILE=input_mozilla_com.`date +%Y.%m.%d`.sql.gz
+        scp username@cm-webdev01-master01:~ddash/input_mozilla_com/$FILE . && \
+        zgrep -v "INSERT INTO \`feedback_term\`" $FILE > tmp.sql && \
+        cat tmp.sql |mysql -u root firefox_input && \
+        rm tmp.sql $FILE
+
+Be sure to replace ``username`` with your actual LDAP username.
+
+
 .. _db-cluster:
 
 Webdev Database Cluster
