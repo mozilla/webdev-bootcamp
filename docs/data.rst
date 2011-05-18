@@ -38,12 +38,17 @@ Input Data
 
 .. highlight:: bash
 
-You can get a copy of the Firefox Input database by running the following::
+You can get a copy of the
+Firefox Input database by using the following script::
 
+        set -e
         FILE=input_mozilla_com.`date +%Y.%m.%d`.sql.gz
-        scp username@cm-webdev01-master01:~ddash/input_mozilla_com/$FILE . && \
-        zgrep -v "INSERT INTO \`feedback_term\`" $FILE > tmp.sql && \
-        cat tmp.sql |mysql -u root firefox_input && \
+        USERNAME=username
+        LOCAL_DB=firefox_input
+
+        scp $USERNAME@cm-webdev01-master01:~ddash/input_mozilla_com/$FILE .
+        zgrep -v "INSERT INTO \`feedback_term\`" $FILE > tmp.sql
+        cat tmp.sql |mysql -u root $LOCAL_DB
         rm tmp.sql $FILE
 
 Be sure to replace ``username`` with your actual LDAP username.
