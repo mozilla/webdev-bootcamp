@@ -67,9 +67,9 @@ In order to work on a project:
 * Merge your commit into ``master`` which should track the ``origin/master``
 * ``git push``
 * Place a link to the commit (as it appears in the origin repository) in the
-  relevent bug.
+  relevant bug.
 
-Commit Messsages
+Commit Messages
 ~~~~~~~~~~~~~~~~
 
 * Follow these guidelines_.
@@ -85,7 +85,7 @@ You will want to keep your local ``master`` branch in sync.  Typically you
 will rebase your branches with your ``master`` and ultimately you will push
 your ``master`` to ``origin/master``.
 
-Let's assume you've defined your ``origin`` remote propperly in github.  E.g.
+Let's assume you've defined your ``origin`` remote properly in github.  E.g.
 for Zamboni_. ::
 
     origin	git@github.com:jbalogh/zamboni.git
@@ -156,7 +156,7 @@ See :ref:`bug-life`
 
 Looking at someone's code
 ~~~~~~~~~~~~~~~~~~~~~~~~~
-Sometimes you need to run someone elses code locally.  If they've given you a
+Sometimes you need to run someone else's code locally.  If they've given you a
 pull request, or a commit hash this is what you need to do to see there code::
 
     git add remote davedash git@github.com:davedash/zamboni.git
