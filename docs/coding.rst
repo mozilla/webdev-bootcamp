@@ -86,7 +86,7 @@ life easier:
 Use ``resolve('myurl')`` and ``{{ url('myurl') }}`` when linking to internal
 URLs.
 This will handle hosts, relative host names, changed end points for you.  It
-will also noticably break so dead-links don't linger in your code.
+will also noticeably break so dead-links don't linger in your code.
 
 .. highlight:: jinja
 
