@@ -11,6 +11,9 @@ SVN for localizers.
 We'll be attempting to
 phase that out.
 
+Git Resources
+-------------
+
 If you don't know ``git`` or haven't used it in a team, fear not! There are
 lots of awesome sites for git newbies. We recommend:
 
@@ -22,7 +25,7 @@ lots of awesome sites for git newbies. We recommend:
 * `Pro Git`_ is probably the best ``git`` resource in existence. It covers
   pretty much everything you'd want to know about ``git``, so it's quite
   lengthy, but it's a great read to get to know the basics or to use as a
-  reference.
+  reference. `Pro Git`_ is written by one of the developers at GitHub_.
 * There's a good `list of git resources on StackOverflow`_. It lists tools,
   tutorials, reference guides, etc. A lot of handy stuff there.
 * Read about the `git-flow model`_. We work similarly to this at Mozilla,
@@ -170,12 +173,3 @@ Note:
   anything.
 * In the third line I can check out your branch.  If you just gave me a commit
   hash I would do ``git co $COMMIT_HASH``.
-
-Git resources
--------------
-
-* http://help.github.com/ explains a lot of ``git`` details as they relate to
-  Github_.
-* ProGit_ is written by one of the Github developers.
-
-.. _ProGit: http://progit.org/book/
