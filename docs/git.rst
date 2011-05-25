@@ -52,7 +52,9 @@ start in the `Mozilla account`_.
 
 Contact ``jbalogh`` or ``jsocol`` to be
 added to the webdev group of the
-Mozilla account.
+Mozilla account. They hang out in **#webdev**
+on IRC, which is a fine place to ask for access
+when you start at Mozilla.
 
 .. _`Mozilla account`: https://github.com/mozilla
 .. _GitHub: https://github.com/
