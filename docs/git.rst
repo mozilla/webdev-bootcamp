@@ -2,7 +2,7 @@ Git and Github
 ==============
 
 Unless you have a good reason
-you should be using ``git`` and Github_
+you should be using ``git`` and GitHub_
 for version control.
 One notable exception is
 many of our projects
@@ -11,7 +11,36 @@ SVN for localizers.
 We'll be attempting to
 phase that out.
 
-If you don't know ``git`` or haven't used it in a team, the best wa
+If you don't know ``git`` or haven't used it in a team, fear not! There are
+lots of awesome sites for git newbies. We recommend:
+
+* Help.Github_ can help you get started with ``git`` regardless of your
+  operating system. If you haven't used GitHub_ before, it's the perfect
+  crash course. There's also some good info about ``git`` itself. You can
+  ignore the "deploy" section, as we have our own deployment process at
+  Mozilla.
+* `Pro Git`_ is probably the best ``git`` resource in existence. It covers
+  pretty much everything you'd want to know about ``git``, so it's quite
+  lengthy, but it's a great read to get to know the basics or to use as a
+  reference.
+* There's a good `list of git resources on StackOverflow`_. It lists tools,
+  tutorials, reference guides, etc. A lot of handy stuff there.
+* Read about the `git-flow model`_. We work similarly to this at Mozilla,
+  except we use ``master`` as our development branch, ``prod`` for our
+  production branch, and ``bug-$BUG_NUMBER`` as our feature branches. Once
+  you get to know ``git``, understanding how to use/manage branches
+  effectively will allow you to keep different bug fixes and features in their
+  own branches. This is **really awesome**, especially if regressions crop up!
+
+Next time you start a project, use ``git``/GitHub_!
+Working on a project by yourself is a bit different than working with others,
+but start using the basics of ``git`` and some of the more wild stuff
+(multiple origins, rebasing, etc.) will make more sense.
+
+.. _Help.Github: http://help.github.com/
+.. _`Pro Git`: http://progit.org/book/
+.. _`list of git resources on StackOverflow`: http://stackoverflow.com/questions/315911/git-for-beginners-the-definitive-practical-guide
+.. _`git-flow model`: http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/
 
 github.com/mozilla
 ------------------
@@ -23,7 +52,7 @@ added to the webdev group of the
 Mozilla account.
 
 .. _`Mozilla account`: https://github.com/mozilla
-.. _Github: https://github.com/
+.. _GitHub: https://github.com/
 
 Working on projects
 -------------------
