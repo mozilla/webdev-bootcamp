@@ -26,9 +26,13 @@ Almost all the required development tools can be acquired via ``brew``:
 * redis
 * memcached
 * python
+* gettext (you'll want the GNU version; the BSD version that comes with OS X
+  won't play well with playdoh_)
 
 If you need something that ``brew`` doesn't support, but you could otherwise
 compile, you can create your own recipes.
+
+.. _playdoh: https://github.com/mozilla/playdoh
 
 Xcode (Mac OS X)
 ----------------
@@ -63,6 +67,9 @@ Homework
 --------
 
 Install Homebrew_ and
-install ``git``, ``sphinx``, ``mysql`` and ``python``.
+install ``git``, ``sphinx``, ``mysql``, ``gettext``, and ``python``.
 You'll need at least these items
 for most projects.
+
+For gettext, you'll need to ``brew link gettext`` so your system uses the GNU
+version of gettext instead of the BSD version Apple provides.
