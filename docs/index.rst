@@ -12,7 +12,7 @@ This collection of documents will
 serve as an orientation and reference to
 web development at Mozilla.
 
-This documentation is in Github,
+`This documentation is in Github`_,
 so if you find any mistakes,
 please fork it and
 do a pull request.
@@ -37,10 +37,11 @@ do a pull request.
    who
    mozilla
 
+.. _`This documentation is in Github`: https://github.com/mozilla/webdev-bootcamp
+
 Todo
 ----
 * port this document - http://etherpad.mozilla.org:9000/webdev-bootcamp
-* Link to the github repo for forking.
 * Link to jsocol's continuous deployment doc
 * Link to IT Requests
 * Intersphinx
