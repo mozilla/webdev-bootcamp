@@ -74,7 +74,7 @@ Use single quotes unless you need double (or triple) quotes::
 
 
 .. _PEP8: http://www.python.org/dev/peps/pep-0008/
-.. _check.py: https://github.com/jbalogh/check.py
+.. _check.py: https://github.com/jbalogh/check
 .. _Pocoo: http://www.pocoo.org/internal/styleguide/
 
 Django
