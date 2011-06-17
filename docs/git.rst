@@ -161,7 +161,7 @@ Looking at someone's code
 Sometimes you need to run someone else's code locally.  If they've given you a
 pull request, or a commit hash this is what you need to do to see there code::
 
-    git add remote davedash git@github.com:davedash/zamboni.git
+    git remote add davedash git@github.com:davedash/zamboni.git
     git fetch davedash
     git co davedash/branch
 
