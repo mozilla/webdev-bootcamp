@@ -20,6 +20,7 @@ do a pull request.
 .. toctree::
    :maxdepth: 2
 
+   accounts
    devprocess
    localdev
    bugzilla
