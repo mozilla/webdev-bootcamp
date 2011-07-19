@@ -30,6 +30,7 @@ do a pull request.
    packaging
    data
    servers
+   errors
    irc
    email
    conferencecalls
