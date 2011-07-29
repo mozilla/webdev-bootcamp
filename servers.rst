@@ -20,9 +20,11 @@ There are two or three main environments for our web sites:
 
 * **dev** (currently "stage" or "preview") which serves the latest `master`.
 * **stage**
-  * (currently ``amo-next`` and ``crash-stats.stage``) are our only
-    "stage" environments.
+
+  * Currently ``amo-next`` and ``crash-stats.stage`` are
+    our only "stage" environments.
   * This is what will go live to production.
+
 * **production**
 
 .. _vpn-info:
