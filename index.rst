@@ -27,6 +27,7 @@ do a pull request.
    git
    jenkins
    coding
+   l10n
    packaging
    data
    servers

@@ -1,0 +1,59 @@
+.. _l10n:
+
+===================
+Localization (l10n)
+===================
+
+Most web apps at Mozilla are localized.  We make use of ``gettext``.
+
+See :ref:`playdoh:l10n` in Playdoh
+
+
+.. _l10n-svn:
+
+SVN
+---
+
+By convention Mozilla puts locales in `locale/` and that folder is a working
+copy from SVN.  This allows localizers to use tools like Verbatim_ to add new
+localized content.
+
+You can create an empty subdirectory off of
+https://svn.mozilla.org/projects/l10n-misc/trunk/ to store your `.po` files::
+
+    svn mkdir \
+        https://svn.mozilla.org/projects/l10n-misc/trunk/$MYPROJECTNAME \
+        -m "Creating $MYPROJECTNAME"
+
+Where ``$MYPROJECTNAME`` is the name of your project.
+
+You'll also want to add ``*.mo`` to the list of ``global-ignores`` in your
+``~/.subversion/config`` file.  ``.mo`` files can be compiled at deploy time.
+
+.. warning::
+
+    ``.mo`` files are compiled and therefore have no place in version control.
+
+Now in your project root::
+
+    svn co https://svn.mozilla.org/projects/l10n-misc/trunk/$MYPROJECTNAME \
+    locale
+
+Anytime you make changes using the ``merge`` or ``extract`` commands you'll
+need to commit them back to SVN::
+
+    cd locale/
+    svn add *
+    svn commit -m 'Locale update'
+
+.. _Verbatim: http://localize.mozilla.org/
+
+
+Make this better
+----------------
+
+This process is merely a suggestion.  If you think localization can be improved
+or perhaps automated, by all means... **DO IT!**  If your improvement takes off
+update this, so others can benefit.
+
+
