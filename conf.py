@@ -25,7 +25,7 @@ import sys, os
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = []
+extensions = ['sphinx.ext.intersphinx']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -214,3 +214,7 @@ man_pages = [
     ('index', 'webdevbootcamp', u'Webdev Bootcamp Documentation',
      [u'Dave Dash, Laura Thompson, Jeff Balogh, Mozilla Webdev Team'], 1)
 ]
+
+intersphinx_mapping = dict(
+    playdoh=('http://playdoh.readthedocs.org/en/latest/', None)
+    )
