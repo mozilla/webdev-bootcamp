@@ -7,8 +7,10 @@ fill in the
 gaps
 where there are holes.
 
+
 General Guidelines
 ------------------
+
 * *Style Matters* how code is aligned matters, because code is reviewed,
   edited, and public.  Code that is uneasy to read does not align with the
   spirit of open source.
@@ -17,8 +19,10 @@ General Guidelines
 * *Follow code around you* if you don't know what you're doing try to follow
   what others have done.
 
+
 Testing
 ~~~~~~~
+
 In languages and frameworks that provide easy test-ability, *write tests!*
 
 Go for 80% or more coverage, especially in the following areas:
