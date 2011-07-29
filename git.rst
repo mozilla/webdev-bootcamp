@@ -101,6 +101,7 @@ You will want your ``.gitconfig`` to have the following::
         merge = master
         rebase = true
 
+
 Making life easier
 ------------------
 
@@ -116,7 +117,7 @@ Here's a sampling:
 * `git here` will tell you the name of your branch, this is an excellent
   building block
 * ``git bugbranch $BUGNUM`` will copy your current branch to an appropriately
-  named bug branch.  This uses the :ref:`Bugzilla API bugzilla-api`.
+  named bug branch.  This uses the :ref:`Bugzilla API <bugzilla-api>`.
 * ``git compare``
   with the appropriate ``git.config`` settings
   will give you a
