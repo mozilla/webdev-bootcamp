@@ -1,3 +1,6 @@
+.. _packaging:
+
+===================================
 Packaging and Dependency Management
 ===================================
 
@@ -6,13 +9,14 @@ a number of dependencies.
 ``pip`` can be handy, but we've had better luck with distributing a ``vendor``
 library.
 
-For the basics, read `Zamboni packaging`_ as well as Playdoh_'s docs.
+For the basics, read `Zamboni packaging`_ as well as :ref:`playdoh:packages`.
 
 .. _`Zamboni packaging`: http://jbalogh.github.com/zamboni/topics/packages/
-.. _Playdoh: http://mozilla.github.com/playdoh/packages/
+
 
 Updating a Library
 ------------------
+
 Let's say we want to update Django to 1.3.
 We already have Django
 setup in our ``requirements/prod.txt``
