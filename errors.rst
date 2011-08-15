@@ -10,7 +10,10 @@ three servers, all requiring Mozilla LDAP access:
 
 * http://amckay-arecibo.khan.mozilla.org/ test server, play around here.
 * https://arecibo-sjc.mozilla.org/ one in the SJC data centre.
-* https://arecibo-phx.mozilla.org/ one in the PHX data centre.
+* https://arecibo-phx.mozilla.org/ one in the PHX data centre *preferred*.
+
+The PHX data centre server is on a dedicated box, where as SJC is in a VM. Please
+use the PHX one if possible.
 
 To send errors from playdoh, see the `playdoh`_ docs.
 
