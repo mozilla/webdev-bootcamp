@@ -9,8 +9,10 @@ Optionally, you can use `Arecibo`_ to track your errors. There are currently
 three servers, all requiring Mozilla LDAP access:
 
 * http://amckay-arecibo.khan.mozilla.org/ test server, play around here.
-* https://arecibo-sjc.mozilla.org/ one in the SJC data centre.
-* https://arecibo-phx.mozilla.org/ one in the PHX data centre *preferred*.
+* https://arecibo-sjc.mozilla.org/ one in the SJC data centre. To post to this
+  instance use the following URL in your Django config: http://arecibo1.dmz.sjc1.mozilla.com/
+* https://arecibo-phx.mozilla.org/ one in the PHX data centre *preferred*. To
+  post to this instance, use the following URL in your Django config: http://arecibo1.dmz.phx1.mozilla.com/
 
 The PHX data centre server is on a dedicated box, where as SJC is in a VM. Please
 use the PHX one if possible.
