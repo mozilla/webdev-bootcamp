@@ -1,3 +1,8 @@
+.. index:: git, github
+
+.. _git-chapter:
+
+
 Git and Github
 ==============
 

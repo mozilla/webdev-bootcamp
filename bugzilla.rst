@@ -1,5 +1,7 @@
 .. index:: bugzilla
 
+.. _bugzilla-chapter:
+
 Bugzilla
 ========
 

@@ -12,15 +12,27 @@ List of All Accounts (and How to Get Them)
 
 Use the links to each app to get to their signup form.
 
-* `Bugzilla`_ — use your @mozilla.com email to get 1337 access, and put your
-  IRC nick or whatever you go by in your Bugzilla username for easier
-  searching (example: ``Matthew Riley MacPherson [:tofumatt]``).
+* `Bugzilla`_ — use your @mozilla.com email to get 1337 access, and
+  put your IRC nick or whatever you go by in your Bugzilla username
+  for easier searching (example: ``Matthew Riley MacPherson
+  [:tofumatt]``).
+
+  See :ref:`bugzilla-chapter` for more details.
+
 * `GitHub`_ — a free account is all that's required to develop on Mozilla web
-  apps/sites. Ping ``jbalogh``, ``jsocol``, or your manager on IRC to get
-  added to the right groups.
-* IRC_ — check out the wiki to learn about Mozilla IRC. You should register
-  your main nickname on IRC so it doesn't get stolen and so you can access
-  any channels that require you to ``IDENTIFY``.
+  apps/sites.
+
+  Ping ``jbalogh``, ``jsocol``, or your manager on IRC to get added to
+  the right groups.
+
+  See :ref:`git-chapter` for more details.
+
+* IRC_ — check out the wiki to learn about Mozilla IRC. You should
+  register your main nickname on IRC so it doesn't get stolen and so
+  you can access any channels that require you to ``IDENTIFY``.
+
+  See :ref:`irc-chapter` for more details.
+
 * Mercurial_ and ``svn`` — Sometimes things aren't in GitHub and you need to
   use ``hg`` or ``svn``. Locale files in particular are stored in Subversion
   for various reasons. Check out `Becoming a contributor`_ and be sure to ask

@@ -1,3 +1,7 @@
+.. index:: irc
+
+.. _irc-chapter:
+
 IRC
 ===
 
