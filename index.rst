@@ -53,3 +53,6 @@ Todo
 * Verify that the slave db is correct.
 * screen shots
 * explain data centers - http://blog.mozilla.com/mrz/2010/01/04/mozillas-new-phoenix-data-center/
+
+
+.. todolist::
