@@ -40,10 +40,19 @@ do a pull request.
    who
    mozilla
 
+
 .. _`This documentation is in Github`: https://github.com/mozilla/webdev-bootcamp
 
+
+Indices
+=======
+
+* :ref:`genindex`
+
+
 Todo
-----
+====
+
 * port this document - http://etherpad.mozilla.org:9000/webdev-bootcamp
 * Link to jsocol's continuous deployment doc
 * Link to IT Requests
