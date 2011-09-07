@@ -2,9 +2,12 @@ Development Process
 ===================
 
 This document outlines the development process for most projects.
-**Not every project follows this**---notably *Socorro* and *Elmo*.
-Check with your team lead or manager for clarification and then fork
-this.
+
+.. Note::
+
+   **Not every project follows this**---notably *Socorro* and *Elmo*.
+   Check with your team lead or manager for clarification and then
+   fork this.
 
 .. index:: release cycle
 
