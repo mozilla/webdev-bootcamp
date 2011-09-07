@@ -5,7 +5,7 @@
 IRC
 ===
 
-There's a Mozilla IRC server at ``irc.mozilla.org``.  The `Mozilla IRC
+There's a Mozilla IRC server at ``irc.mozilla.org``. The `Mozilla IRC
 server`_ page on the wiki talks about how to connect, how to ask
 questions, and other things.
 
@@ -25,7 +25,7 @@ Also of interest:
 
 .. todo::
 
-    Add other useful channels here.  Is there one for HTML5?
+    Add other useful channels here. Is there one for HTML5?
 
 
 .. _`Mozilla IRC server`: https://wiki.mozilla.org/IRC

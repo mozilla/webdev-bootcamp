@@ -14,7 +14,7 @@ This document outlines the development process for most projects.
 Release Cycles
 --------------
 
-Teams work on 1, 2 or 3-week release cycles.  Ultimately teams want a
+Teams work on 1, 2 or 3-week release cycles. Ultimately teams want a
 continuous development process, where code can be developed and placed
 in production immediately.
 
@@ -66,11 +66,11 @@ A Bugs Life
 QA
 --
 
-QA will verify that bugs are fixed.  If you are working on a bug that
+QA will verify that bugs are fixed. If you are working on a bug that
 does not need QA verification mark it with ``[qa-]`` in the whiteboard
 status.
 
-QA will re-open a bug if they feel it's not complete.  They will file
+QA will re-open a bug if they feel it's not complete. They will file
 new bugs if regressions are found within the current milestone.
 
 
@@ -79,7 +79,7 @@ new bugs if regressions are found within the current milestone.
 Deployment
 ----------
 
-Deployment varies heavily by product.  A typical flux project will
+Deployment varies heavily by product. A typical flux project will
 branch ``master`` into ``prod`` and tag the release with the
 milestone.
 

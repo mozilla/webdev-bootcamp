@@ -6,7 +6,7 @@ Bugzilla
 ========
 
 Almost all webdev tasks take place in
-Bugzilla_.  See :ref:`bug-life`.
+Bugzilla_. See :ref:`bug-life`.
 
 .. _Bugzilla: https://bugzilla.mozilla.org
 
@@ -33,7 +33,7 @@ be assured they get you.
 IT Requests
 -----------
 
-`IT requests`_ are a special type of bug that the IT team can follow up.  You
+`IT requests`_ are a special type of bug that the IT team can follow up. You
 can file a request for Website pushes as well as Desktop support.
 
 .. _`IT requests`: https://bugzilla.mozilla.org/enter_bug.cgi?product=mozilla.org&format=itrequest
@@ -41,7 +41,7 @@ can file a request for Website pushes as well as Desktop support.
 Searches
 --------
 
-Searches in Bugzilla_ can be saved.  You can also share searches with others
+Searches in Bugzilla_ can be saved. You can also share searches with others
 and you can keep other people's shared searches in your Bugzilla view.
 
 .. _bugzilla-api:
