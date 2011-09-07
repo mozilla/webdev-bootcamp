@@ -73,7 +73,7 @@ In order to work on a project:
   in the relevant bug.
 
 Commit Messages
-~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~
 
 * Follow these guidelines_.
 * Should begin with a 50 character summary, with details if needed below.
