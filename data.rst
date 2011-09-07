@@ -1,7 +1,7 @@
 Data storage and retrieval
 ==========================
 
-Most sites have fairly simple data-layers.  The notable exception is Socorro.
+Most sites have fairly simple data-layers. The notable exception is Socorro.
 
 Typically we use some form of mysql with master-slave replication.
 
@@ -59,5 +59,5 @@ Be sure to replace ``username`` with your actual LDAP username.
 Webdev Database Cluster
 ~~~~~~~~~~~~~~~~~~~~~~~
 Alternately, many production databases have copies running on
-`cm-webdev01-master01` and `cm-webdev01-slave01`.  You can connect directly to
+`cm-webdev01-master01` and `cm-webdev01-slave01`. You can connect directly to
 these servers.

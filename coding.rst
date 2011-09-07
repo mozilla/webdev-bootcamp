@@ -13,12 +13,12 @@ General Guidelines
 * *Style matters*
 
   How code is aligned matters, because code is reviewed, edited, and
-  public.  Code that is uneasy to read does not align with the spirit
+  public. Code that is uneasy to read does not align with the spirit
   of open source.
 
 * *Be consistent*
 
-  If you do something a certain way, be able to justify it.  Don't mix
+  If you do something a certain way, be able to justify it. Don't mix
   `camelCase` with `underscore_words` unless you have good reason.
 
 * *Follow code around you*
@@ -42,12 +42,12 @@ Go for 80% or more coverage, especially in the following areas:
 * re-opened bugs
 
 Tests last longer than code, as they tend to define the products'
-functionality.  They are valuable because they allow us to quickly
+functionality. They are valuable because they allow us to quickly
 make changes without fear of hindering functionality.
 
-The other half of testing is continuous integration.  We should be
+The other half of testing is continuous integration. We should be
 running our tests at every check in and be able to say with certainty
-that the code is correct to the best of our knowledge.  See
+that the code is correct to the best of our knowledge. See
 :ref:`ci-chapter`.
 
 
@@ -94,12 +94,12 @@ Use single quotes unless you need double (or triple) quotes::
 Django
 ------
 
-Follow :ref:`python`.  There are a few things in Django that will make
+Follow :ref:`python`. There are a few things in Django that will make
 your life easier:
 
 Use ``resolve('myurl')`` and ``{{ url('myurl') }}`` when linking to
-internal URLs.  This will handle hosts, relative host names, changed
-end points for you.  It will also noticeably break so dead-links don't
+internal URLs. This will handle hosts, relative host names, changed
+end points for you. It will also noticeably break so dead-links don't
 linger in your code.
 
 .. highlight:: jinja
@@ -117,7 +117,7 @@ Playdoh
 ~~~~~~~
 
 New web-apps should be spawned from Playdoh_ and existing ones should
-follow the spirit of Playdoh_.  Playdoh_ collects lessons that several
+follow the spirit of Playdoh_. Playdoh_ collects lessons that several
 Mozilla Django projects have learned and wraps them into a single
 Django project template.
 
@@ -134,7 +134,7 @@ See :ref:`packaging`.
 Javascript
 ----------
 
-* Use JSHint_ — it's like JSLint_ but a bit more reasonable.  JSHint
+* Use JSHint_ — it's like JSLint_ but a bit more reasonable. JSHint
   has options for assuming jQuery, node.js, and other options of use
   to web developers writing JavaScript.
 * Write QUnit tests when possible.

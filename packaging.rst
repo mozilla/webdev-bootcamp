@@ -27,7 +27,7 @@ directory.
 
   -e git://github.com/django/django@1.2.5#egg=django
 
-So we're on Django 1.2.5.  We want to go to Django 1.3.  We edit
+So we're on Django 1.2.5. We want to go to Django 1.3. We edit
 ``prod.txt``::
 
   -e git://github.com/django/django@1.3#egg=django
