@@ -51,7 +51,7 @@ that the code is correct to the best of our knowledge. See
 :ref:`ci-chapter`.
 
 
-.. index:: code;style
+.. index:: code;python coding style
 
 .. _python:
 
@@ -89,7 +89,7 @@ Use single quotes unless you need double (or triple) quotes::
 .. _Pocoo: http://www.pocoo.org/internal/styleguide/
 
 
-.. index:: code;django tips
+.. index:: code;django coding style
 
 Django
 ------
@@ -129,7 +129,7 @@ See :ref:`packaging`.
 
 .. _Playdoh: https://github.com/mozilla/playdoh
 
-.. index:: code;javascript
+.. index:: code;javascript coding style
 
 Javascript
 ----------
@@ -145,7 +145,7 @@ Javascript
 .. _JSLint: http://www.jslint.com/
 
 
-.. index:: code;html5
+.. index:: code;html5 coding style
 
 HTML
 ----
