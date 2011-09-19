@@ -35,6 +35,8 @@ lots of awesome sites for git newbies. We recommend:
   use/manage branches effectively will allow you to keep different bug
   fixes and features in their own branches. This is **really
   awesome**, especially if regressions crop up!
+* We use ``git submodule`` for our libraries. This `git submodules explained`_
+  article helps you understand how they work.
 
 Next time you start a project, use ``git``/GitHub_!  Working on a
 project by yourself is a bit different than working with others, but
@@ -45,6 +47,7 @@ start using the basics of ``git`` and some of the more wild stuff
 .. _`Pro Git`: http://progit.org/book/
 .. _`list of git resources on StackOverflow`: http://stackoverflow.com/questions/315911/git-for-beginners-the-definitive-practical-guide
 .. _`git-flow model`: http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/
+.. _`git submodules explained`: http://longair.net/blog/2010/06/02/git-submodules-explained/
 
 github.com/mozilla
 ------------------
