@@ -32,7 +32,7 @@ do a pull request.
    data
    servers
    errors
-   irc
+   communications
    email
    conferencecalls
    documentation
