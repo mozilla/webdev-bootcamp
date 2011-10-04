@@ -28,6 +28,19 @@ lots of awesome sites for git newbies. We recommend:
   developers at GitHub_.
 * There's a good `list of git resources on StackOverflow`_. It lists
   tools, tutorials, reference guides, etc. A lot of handy stuff there.
+
+Next time you start a project, use ``git``/GitHub_!  Working on a
+project by yourself is a bit different than working with others, but
+start with some basic ``git`` commands (clone, branch, merge) and some of 
+the more wild stuff (multiple origins, rebasing, etc.) will make more sense.
+
+.. _Help.Github: http://help.github.com/
+.. _`Pro Git`: http://progit.org/book/
+.. _`list of git resources on StackOverflow`: http://stackoverflow.com/questions/315911/git-for-beginners-the-definitive-practical-guide
+
+Git Practices at Mozilla
+------------------------
+
 * Read about the `git-flow model`_. We work similarly to this at
   Mozilla, except we use ``master`` as our development branch,
   ``prod`` for our production branch, and ``bug-$BUG_NUMBER`` as our
@@ -37,17 +50,13 @@ lots of awesome sites for git newbies. We recommend:
   awesome**, especially if regressions crop up!
 * We use ``git submodule`` for our libraries. This `git submodules explained`_
   article helps you understand how they work.
+* We often use ``git rebase`` to combine and fix commits before merging to
+  mozilla origin repositories. This helps code reviews and keeps
+  commit history clean. GitHub has `a good rebase article`_.
 
-Next time you start a project, use ``git``/GitHub_!  Working on a
-project by yourself is a bit different than working with others, but
-start using the basics of ``git`` and some of the more wild stuff
-(multiple origins, rebasing, etc.) will make more sense.
-
-.. _Help.Github: http://help.github.com/
-.. _`Pro Git`: http://progit.org/book/
-.. _`list of git resources on StackOverflow`: http://stackoverflow.com/questions/315911/git-for-beginners-the-definitive-practical-guide
 .. _`git-flow model`: http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/
 .. _`git submodules explained`: http://longair.net/blog/2010/06/02/git-submodules-explained/
+.. _`a good rebase article`: http://help.github.com/rebase/
 
 github.com/mozilla
 ------------------
