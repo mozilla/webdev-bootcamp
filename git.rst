@@ -71,6 +71,18 @@ which is a fine place to ask for access when you start at Mozilla.
 .. _`Mozilla account`: https://github.com/mozilla
 .. _GitHub: https://github.com/
 
+Service Hooks
+~~~~~~~~~~~~~
+
+GitHub has some service hooks that are helpful to Mozilla projects.
+
+* Bugzilla - posts comments on bugzilla when commit messages reference a
+  bug by id, and closes bugs when commit message says 'fix' or 'close'
+* IRC - announces repository pushes in an irc channel
+
+Contact ``davedash`` or ``wenzel`` to get access parameters for the
+hooks.
+
 Working on projects
 -------------------
 In order to work on a project:
@@ -100,7 +112,7 @@ You will want to keep your local ``master`` branch in sync. Typically
 you will rebase your branches with your ``master`` and ultimately you
 will push your ``master`` to ``origin/master``.
 
-Let's assume you've defined your ``origin`` remote properly in github.
+Let's assume you've defined your ``origin`` remote properly in GitHub.
 E.g. for Zamboni_. ::
 
     origin	git@github.com:jbalogh/zamboni.git
