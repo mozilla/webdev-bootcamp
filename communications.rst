@@ -18,7 +18,12 @@ questions, and other things.
 We hang out on a bunch of different channels:
 
 * #webdev - general web development
-* #sumodev - development of SUMO
+* #sumodev - development of `SUMO`_
+* #input - development of `Input`_
+* #mozillians - development of `Mozillians (Community Directory)`_
+* #breakpad - development of `socorro, crash-stats, and breakpad`_
+* #mdn - development of `MDN`_
+* #amo - development of `AMO`_
 
 .. todo::
 
@@ -28,6 +33,7 @@ We hang out on a bunch of different channels:
 Also of interest:
 
 * #js - javascript programming discussion
+* #nodejs - nodejs discussion
 
 .. todo::
 
@@ -35,7 +41,12 @@ Also of interest:
 
 
 .. _`Mozilla IRC server`: https://wiki.mozilla.org/IRC
-
+.. _`SUMO`: https://github.com/jsocol/kitsune
+.. _`Input`: https://github.com/mozilla/input.mozilla.org
+.. _`Mozillians (Community Directory)`: https://github.com/mozilla/mozillians
+.. _`socorro, crash-stats, and breakpad`: https://github.com/mozilla/socorro
+.. _`MDN`: https://github.com/mozilla/kuma
+.. _`AMO`: https://github.com/mozilla/zamboni
 
 .. index:: communications;zimbra-email
 
