@@ -58,18 +58,105 @@ that the code is correct to the best of our knowledge. See
 Python
 ------
 
-We do what others do:
+We do what others in the python community have established:
 
 * We follow PEP8_.
 * We test using check.py_ which combines `pep8.py` and `pyflakes`.
-* Pocoo_ has good guidelines as well, let's steal them.
+* We follow Pocoo_'s extensions of PEP8_ as they are well thought out.
 
-Also, spaces matter:
+Import Statements
+^^^^^^^^^^^^^^^^^
+
+We expand on PEP8_'s suggestions for import statements.  These greatly improve 
+ones ability to ascertain what is and isn't available in a given file.
+
+Import one module per import statement::
+
+    import os
+    import sys
+
+not::
+
+    import os, sys
+
+Separate imports into groups with a line of whitespace: 
+standard library; Django (or framework); third-party; and local imports::
+
+    import os
+    import sys
+
+    from django.conf import settings
+
+    import pyquery
+
+    from myapp import models, views
+
+
+Alphabetize your imports, it will make your code easier to scan.  See how terrible this is::
+
+    import cows
+    import kittens
+    import bears
+
+A simple sort::
+
+    import bears
+    import cows
+    import kittens
+
+Imports on top, ``from``-imports below::
+
+    import x
+    import y
+    import z
+    from bears import pandas
+    from xylophone import bar
+    from zoos import lions
+
+That's loads easier to read than::
+
+    from bears import pandas
+    import x
+    from xylophone import bar
+    import y
+    import z
+    from zoos import lions
+
+
+Lastly, when importing things into your namespace from a package use an alphabetized
+``CONSTANT``, ``Class``, ``var`` order::
+
+    from models import DATE, TIME, Dog, Kitteh, upload_pets
+
+
+If possible though, it may be easier to import the entire package, especially for methods 
+as it help answers the question, "where did ``you`` come from?"
+
+Bad::
+
+    from foo import you
+
+
+    def my_code():
+        you()  # wait, is this defined in this file?
+
+
+Good::
+
+    import foo
+
+
+    def my_code():
+        foo.you()  # oh you...
+
+
+Whitespace matters
+^^^^^^^^^^^^^^^^^^
 
 * Use 4 spaces, not 2---it increases legibility considerably.
 * Never use tabs---history has shown that we cannot handle them.
 
-Use single quotes unless you need double (or triple) quotes::
+Use single quotes unless double (or triple) quotes would be an improvement::
 
     'this is good'
 
