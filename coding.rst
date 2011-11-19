@@ -30,7 +30,7 @@ General Guidelines
 .. index:: code;testing
 
 Testing
-~~~~~~~
+^^^^^^^
 
 In languages and frameworks that provide easy test-ability, *write
 tests!*
@@ -63,6 +63,7 @@ We do what others in the python community have established:
 * We follow PEP8_.
 * We test using check.py_ which combines `pep8.py` and `pyflakes`.
 * We follow Pocoo_'s extensions of PEP8_ as they are well thought out.
+
 
 Import Statements
 ^^^^^^^^^^^^^^^^^
