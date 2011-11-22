@@ -1,21 +1,31 @@
-.. Webdev Bootcamp documentation master file, created by
-   sphinx-quickstart on Thu May  5 14:21:14 2011.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
+===============
 Webdev Bootcamp
 ===============
 
-Web development at Mozilla can be
-challenging.
-This collection of documents will
-serve as an orientation and reference to
-web development at Mozilla.
+Perhaps you are familiar with Git, Django, jQuery, 
+Python, JS, CSS, HTML, RabbitMQ, Celery and **the DOM**. 
 
-`This documentation is in Github`_,
-so if you find any mistakes,
-please fork it and
-do a pull request.
+Despite all that, web developing at Mozilla can still be
+challenging.  
+The *Webdev Bootcamp* is an attempt to clarify how things 
+are sometimes done.
+
+.. seealso::
+   If you are doing Django development for Mozilla, 
+   much of our Django behavior is encapsulated in 
+   `Playdoh <http://playdoh.readthedocs.org/>`.
+
+.. note::
+   `This documentation is in Github`_,
+   so if you find any mistakes or omissions
+   please fork it and
+   do a pull request.
+
+.. warning::
+   This document is strictly a guide.  If the documentation told you to 
+   jump off a cliff, would you?  Likewise, if you can do something better, 
+   or if you think what's been documented is not right.  Challenge it and 
+   make life better for your webdev siblings.
 
 .. toctree::
    :maxdepth: 2
