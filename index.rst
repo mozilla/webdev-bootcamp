@@ -13,7 +13,7 @@ are sometimes done.
 .. seealso::
    If you are doing Django development for Mozilla, 
    much of our Django behavior is encapsulated in 
-   `Playdoh <http://playdoh.readthedocs.org/>`.
+   `Playdoh <http://playdoh.readthedocs.org/>`_.
 
 .. note::
    `This documentation is in Github`_,
