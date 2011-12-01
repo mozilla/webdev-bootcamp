@@ -19,7 +19,7 @@ https://arecibo-phx.mozilla.org/ (behind LDAP)
 
       ARECIBO_SERVER_URL = 'http://arecibo1.dmz.phx1.mozilla.com/'
 
-https://arecibo-sjc.mozilla.org/ 
+https://arecibo-sjc.mozilla.org/ (behind LDAP)
    The SJC instance.
 
    To use it place the following in your Django settings::
