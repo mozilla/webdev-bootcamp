@@ -9,7 +9,7 @@ When a traceback occurs in production sites, you need to send it somewhere.
 Normally Django sends emails which can work fine until you get a few
 thousand error emails in a minute.
 
-Optionally, you can use `Arecibo`_ to track your errors. 
+To mitigate this, you can use `Arecibo`_ to track your errors. 
 There are currently three servers:
 
 https://arecibo-phx.mozilla.org/ (behind LDAP)
@@ -34,6 +34,12 @@ http://amckay-arecibo.khan.mozilla.org/
       ARECIBO_SERVER_URL = 'http://amckay-arecibo.khan.mozilla.org/'
 
 To send errors from playdoh, see the `playdoh`_ docs.
+
+.. warning::
+   IT needs to update the ``ARECIBO_SERVER_URL`` in Django's local settings.
+   They will need to verify via curl, that the webheads can reach Arecibo::
+
+       curl -I http://arecibo1.dmz.phx1.mozilla.com/
 
 .. note::
    The PHX data centre server is on a dedicated box, where as SJC is in a VM. Please
