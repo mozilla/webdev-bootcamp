@@ -45,5 +45,5 @@ To send errors from playdoh, see the `playdoh`_ docs.
    The PHX data centre server is on a dedicated box, where as SJC is in a VM. Please
    use the PHX one if possible.
 
-.. _playdoh: http://playdoh.readthedocs.org/en/latest/errors.html#arecibo
+.. _playdoh: http://playdoh.readthedocs.org/en/latest/userguide/errors.html#arecibo
 .. _Arecibo: http://areciboapp.com
