@@ -18,6 +18,7 @@ questions, and other things.
 We hang out on a bunch of different channels:
 
 * #webdev - general web development
+* #flux - the `Rapid Development team`_'s channel
 * #sumodev - development of `SUMO`_
 * #input - development of `Input`_
 * #mozillians - development of `Mozillians (Community Directory)`_
@@ -47,6 +48,7 @@ Also of interest:
 .. _`socorro, crash-stats, and breakpad`: https://github.com/mozilla/socorro
 .. _`MDN`: https://github.com/mozilla/kuma
 .. _`AMO`: https://github.com/mozilla/zamboni
+.. _`Rapid Development team`: https://wiki.mozilla.org/Webdev/Flux
 
 .. index:: communications;zimbra-email
 
