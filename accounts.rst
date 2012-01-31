@@ -38,6 +38,14 @@ Use the links to each app to get to their signup form.
   for various reasons. Check out `Becoming a contributor`_ and be sure to ask
   for "Level 2 Mercurial Access".
 
+* VPN — You'll have access to Mozilla-MV_ (office network) by default, though
+  it does require some setup. Access to Mozilla-MPT_ is by request only however,
+  and you'll need it.
+
+  See :ref:`vpn-info` for more details.
+
+.. _Mozilla-MPT: https://intranet.mozilla.org/IT_MPT-RemoteAccess
+.. _Mozilla-MV: https://intranet.mozilla.org/JumpHost
 .. _`Becoming a contributor`: http://www.mozilla.org/hacking/committer/
 .. _Bugzilla: https://bugzilla.mozilla.org/createaccount.cgi
 .. _GitHub: https://github.com/signup/free

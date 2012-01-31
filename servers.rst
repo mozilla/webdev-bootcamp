@@ -1,3 +1,5 @@
+.. index:: servers
+
 Servers
 =======
 
@@ -33,16 +35,19 @@ VPN
 ---
 
 To get to any Mozilla servers you will need VPN access. There are two VPN
-networks: Mozilla-MV (Mountain View office VPN) and Mozilla MPT (for access
+networks: Mozilla-MV_ (Mountain View office VPN) and Mozilla-MPT_ (for access
 to khan, staging servers, etc.).
 
 If you want to use Mozilla's shared network volumes (like ``fs2``) you can
 connect to the Mozilla-MV VPN.
 
 If you need to access khan, database servers, or the cm-vpn01 server, connect
-to Mozilla MPT.
+to Mozilla MPT. You'll need to file a ticket for `access to MPT`_. If you're a
+web dev for Mozilla, **you need this**.
 
 We recommend Viscosity_ for VPN.
 
-
+.. _Mozilla-MPT: https://intranet.mozilla.org/IT_MPT-RemoteAccess
+.. _Mozilla-MV: https://intranet.mozilla.org/JumpHost
+.. _access to MPT: https://intranet.mozilla.org/IT_MPT-RemoteAccess#Login_.26_Passwords
 .. _Viscosity: https://intranet.mozilla.org/IT_MPT-RemoteAccess#Viscosity_.28TunnelBlick_alternative.29
