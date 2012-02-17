@@ -8,6 +8,8 @@ To contact someone, you can use the following methods:
 
 .. index:: communications;irc
 
+.. _irc-chapter:
+
 IRC
 ---
 
