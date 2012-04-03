@@ -24,7 +24,7 @@ are sometimes done.
 .. warning::
    This document is strictly a guide.  If the documentation told you to 
    jump off a cliff, would you?  Likewise, if you can do something better, 
-   or if you think what's been documented is not right.  Challenge it and 
+   or if you think what's been documented is not right, challenge it and 
    make life better for your webdev siblings.
 
 .. toctree::
