@@ -10,7 +10,7 @@ option is available.
 
 **\*.allizom.org**: all our staging servers share this domain.
 
-**cm-webdev01-master01** is the webdev mysql server. See :ref:`db-cluster`.
+**webdev1.db.scl3.mozilla.com** is the webdev mysql server. See :ref:`db-cluster`.
 
 **cm-vpn01** is where our server logs are copied. Note that you need to file
 a bug to get access to this server.

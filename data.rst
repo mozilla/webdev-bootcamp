@@ -23,7 +23,7 @@ getting Production or production-like MySQL data.
 Anonymous Data
 ~~~~~~~~~~~~~~
 
-In `~ddash/anonymize` On `cm-webdev01-master01` on the Mozilla/MPT VPN are
+In `~ddash/anonymize` On `webdev1.db.scl3.mozilla.com` on the Mozilla/MPT VPN are
 anonymized dumps of production data for:
 
     * AMO
@@ -46,7 +46,7 @@ Firefox Input database by using the following script::
         USERNAME=username
         LOCAL_DB=firefox_input
 
-        scp $USERNAME@cm-webdev01-master01:~ddash/input_mozilla_com/$FILE .
+        scp $USERNAME@webdev1.db.scl3.mozilla.com:~ddash/input_mozilla_com/$FILE .
         zgrep -v "INSERT INTO \`feedback_term\`" $FILE > tmp.sql
         cat tmp.sql |mysql -u root $LOCAL_DB
         rm tmp.sql $FILE
@@ -59,5 +59,5 @@ Be sure to replace ``username`` with your actual LDAP username.
 Webdev Database Cluster
 ~~~~~~~~~~~~~~~~~~~~~~~
 Alternately, many production databases have copies running on
-`cm-webdev01-master01` and `cm-webdev01-slave01`. You can connect directly to
+`webdev1.db.scl3.mozilla.com` and `webdev2.db.scl3.mozilla.com`. You can connect directly to
 these servers.
