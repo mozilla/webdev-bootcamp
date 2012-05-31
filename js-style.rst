@@ -34,15 +34,15 @@ Variable Formatting:
 Indentation:
 ~~~~~~~~~~~~
 
-2-space indents (no tabs)
+4-space indents (no tabs)
 
 For our projects, always assign var on a newline, not comma separated::
 
-    // Not good
+    // Bad
     var a = 1,
         b = 2,
         c = 3;
-      
+    
     // Good
     var a = 1;
     var b = 2;
@@ -56,7 +56,7 @@ Two scenarios for ``[]`` (one can be on the same line, with discretion
 and the other not so much)::
 
     // Okay on a single line
-    var stuff = [ 1, 2, 3 ];
+    var stuff = [1, 2, 3];
     
     // Never on a single line, multiple only
     var longerStuff = [
@@ -67,14 +67,14 @@ and the other not so much)::
 Never assign multiple variables on the same line.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Not good::
+Bad::
 
     var a = 1, b = 'foo', c = 'wtf';
 
 DO NOT line up variable names.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Not good::
+Bad::
 
     var wut    = true;
     var boohoo = false;
@@ -90,21 +90,20 @@ ASI. Just do it for consistency.
 Conditionals and Loops::
 -----------------------
 
-    // Not good
-    if (something)
-      doStuff()
+    // Bad
+    if (something) doStuff()
 
     // Good
     if (something) {
-      doStuff();    
+        doStuff();
     }
 
 Space after keyword, and space before curly::
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    // Not good
+    // Bad
     if(bad){
-        
+    
     }
 
     // Good
@@ -118,36 +117,31 @@ Functions
 Named Functions
 ~~~~~~~~~~~~~~~
 
-Always try to name functions, even if assigned to another variable or
+**Always** name functions, even if assigned to another variable or
 property. This improves error stacks when debugging.
 
 No space between name and opening paren. Space between closing paren
 and brace::
 
     var method = function doSomething(argOne, argTwo) {
-        
+    
     }
 
 Anonymous Functions
 ~~~~~~~~~~~~~~~~~~~
 
-No space between function and opening paren. Space between closing paren
-and brace::
-
-    function(err, res) {
-        
-    }
+You're doing it wrong. See above about named functions.
 
 
 Operators
 ---------
 
-Always use ``===`` (If in doubt, go with the triple).
-    
+Always use ``===``.
+
 Only exception is when testing for null and undefined.
 
 Example::
-    
+
     if (value != null) {
     
     }
@@ -164,12 +158,12 @@ Comments
 --------
 
 For node functions, always provide a clear comment in this format::
-    
+
     /* Briefly explains what this does
      * Expects: whatever parameters
      * Returns: whatever it returns
      */
- 
+
 If comments are really long, also do it in the ``/* ... */`` format
 like above. Otherwise make short comments like::
 
@@ -182,7 +176,7 @@ Try not to use them.
 
 If a ternary uses multiple lines, don't use a ternary::
 
-    // Not good
+    // Bad
     var foo = (user.lastLogin > new Date().getTime() - 16000) ? user.lastLogin - 24000 : 'wut';
 
     // Good
@@ -199,7 +193,7 @@ Cache regex into a constant.
 
 Always check for truthiness::
 
-    // Not good
+    // Bad
     if (blah !== false) { ...
 
     // Good
@@ -212,4 +206,3 @@ it's not a big deal). Indent the subsequent lines one indent
 (2-spaces) in.
 
 If it looks too clever, it probably is, so just make it simple.
-
