@@ -222,15 +222,7 @@ See :ref:`packaging`.
 Javascript
 ----------
 
-* Use JSHint_ — it's like JSLint_ but a bit more reasonable. JSHint
-  has options for assuming jQuery, node.js, and other options of use
-  to web developers writing JavaScript.
-* Write QUnit tests when possible.
-* Do not write JS in the HTML.
-* Prefer single quotes over double.
-
-.. _JSHint: http://www.jshint.com/
-.. _JSLint: http://www.jslint.com/
+See :ref:`js-style`.
 
 
 .. index:: code;html5 coding style
