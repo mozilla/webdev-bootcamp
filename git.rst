@@ -133,6 +133,8 @@ Making life easier
 Git Tools
 ~~~~~~~~~
 
+**shell**
+
 In order to make life easier we maintain a repository_ of
 ``git-tools``. These are shell scripts or python scripts that commit
 all kinds of magic.
@@ -153,6 +155,12 @@ Here's a sampling:
   the last commit's URL on Github_.
 
 Put these in your path and then fork and make your own tools and share.
+
+**vim**
+
+fugitive.vim_ may very well be the best Git wrapper of all time.
+
+.. _fugitive.vim: https://github.com/tpope/vim-fugitive
 
 Oh My Zsh
 ~~~~~~~~~
