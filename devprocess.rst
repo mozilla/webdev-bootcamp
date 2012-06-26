@@ -79,7 +79,7 @@ new bugs if regressions are found within the current milestone.
 Deployment
 ----------
 
-Deployment varies heavily by product. A typical flux project will
+Deployment varies heavily by product. A typical project will
 branch ``master`` into ``prod`` and tag the release with the
 milestone.
 
@@ -95,5 +95,10 @@ A typical push consists of:
 * QA verifies production is working properly
 * Hotfixes are made if needed
 * Or a rollback happens.
+
+You can also check out `useful documentation`_ from IT about how we deploy
+websites (requires an LDAP account).
+
+.. _useful documentation: https://mana.mozilla.org/wiki/display/websites/Home
 
 We want a "one button" push process that automates the above steps.
