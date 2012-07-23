@@ -1,3 +1,5 @@
+.. _js-style:
+
 JS Style Guide
 ==============
 
@@ -6,15 +8,18 @@ First and Foremost
 
 **ALWAYS** use JSHint_ on your code. 
 
-- There are some exceptions for which JSHint complains about things in
-  node that you can ignore, like how it doesn't know what 'const' is
-  and complains about not knowing what 'require' is. You can add 
-  keywords to ignore to a `.jshintrc` file.
+.. Note::
+
+   There are some exceptions for which JSHint complains about things in
+   node that you can ignore, like how it doesn't know what 'const' is
+   and complains about not knowing what 'require' is. You can add 
+   keywords to ignore to a `.jshintrc` file.
 
 .. _JSHint: http://www.jshint.com/
 
+
 Variable Formatting:
--------------------
+--------------------
 
 ::
 
@@ -31,10 +36,11 @@ Variable Formatting:
     // Client-side
     var MY_CONST = ...
 
-Indentation:
-~~~~~~~~~~~~
 
-4-space indents (no tabs)
+Indentation
+~~~~~~~~~~~
+
+4-space indents (no tabs).
 
 For our projects, always assign var on a newline, not comma separated::
 
@@ -47,6 +53,7 @@ For our projects, always assign var on a newline, not comma separated::
     var a = 1;
     var b = 2;
     var c = 3;
+
 
 Use ``[]`` to assign a new array, not ``new Array()``.
 
@@ -64,20 +71,23 @@ and the other not so much)::
         'other longer stuff'
     ];
 
-Never assign multiple variables on the same line.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Never assign multiple variables on the same line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Bad::
 
     var a = 1, b = 'foo', c = 'wtf';
 
-DO NOT line up variable names.
+
+DO NOT line up variable names
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Bad::
 
     var wut    = true;
     var boohoo = false;
+
 
 Semi-colons
 -----------
@@ -87,8 +97,11 @@ Semi-colons
 Not because ASI is black-magic, or whatever. I'm sure we all understand
 ASI. Just do it for consistency.
 
-Conditionals and Loops::
------------------------
+
+Conditionals and Loops
+----------------------
+
+::
 
     // Bad
     if (something) doStuff()
@@ -98,8 +111,11 @@ Conditionals and Loops::
         doStuff();
     }
 
-Space after keyword, and space before curly::
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Space after keyword, and space before curly
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+::
 
     // Bad
     if(bad){
@@ -110,6 +126,7 @@ Space after keyword, and space before curly::
     if (something) {
     
     }
+
 
 Functions
 ---------
@@ -126,6 +143,7 @@ and brace::
     var method = function doSomething(argOne, argTwo) {
     
     }
+
 
 Anonymous Functions
 ~~~~~~~~~~~~~~~~~~~
@@ -152,7 +170,8 @@ Quotes
 
 Always use single quotes: ``'not double'``
 
-- Only exception: ``"don't escape single quotes in strings. use double quotes"``
+Only exception: ``"don't escape single quotes in strings. use double quotes"``
+
 
 Comments
 --------
@@ -164,10 +183,12 @@ For node functions, always provide a clear comment in this format::
      * Returns: whatever it returns
      */
 
+
 If comments are really long, also do it in the ``/* ... */`` format
 like above. Otherwise make short comments like::
 
     // This is my short comment and it ends in a period.
+
 
 Ternaries
 ---------
