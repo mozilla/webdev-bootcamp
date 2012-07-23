@@ -37,6 +37,7 @@ are sometimes done.
    git
    jenkins
    coding
+   js-style
    l10n
    packaging
    data

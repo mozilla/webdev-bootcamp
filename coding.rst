@@ -202,7 +202,7 @@ Indentation within templates should be handled as such::
 .. index:: playdoh
 
 Playdoh
-~~~~~~~
+^^^^^^^
 
 New web-apps should be spawned from Playdoh_ and existing ones should
 follow the spirit of Playdoh_. Playdoh_ collects lessons that several
