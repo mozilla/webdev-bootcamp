@@ -64,7 +64,7 @@ github.com/mozilla
 New projects for Mozilla websites should start in the `Mozilla
 account`_.
 
-Contact ``jbalogh`` or ``jsocol`` to be added to individual projects
+Contact ``jsocol``, ``wenzel`` or ``peterbe`` to be added to individual projects
 you want to have your way with. They hang out in **#webdev** on IRC,
 which is a fine place to ask for access when you start at Mozilla.
 
