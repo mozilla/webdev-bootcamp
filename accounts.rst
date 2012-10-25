@@ -22,8 +22,7 @@ Use the links to each app to get to their signup form.
 * `GitHub`_ — a free account is all that's required to develop on Mozilla web
   apps/sites.
 
-  Ping ``jbalogh``, ``jsocol``, or your manager on IRC to get added to
-  the right groups.
+  Ping ``wenzel``, ``jsocol``, or your manager on IRC to get added to the right groups.
 
   See :ref:`git-chapter` for more details.
 
