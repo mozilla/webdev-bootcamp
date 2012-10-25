@@ -18,8 +18,7 @@ are sometimes done.
 .. note::
    `This documentation is in Github`_,
    so if you find any mistakes or omissions
-   please fork it and
-   do a pull request.
+   please fork it and submit a pull request.
 
 .. warning::
    This document is strictly a guide.  If the documentation told you to 
