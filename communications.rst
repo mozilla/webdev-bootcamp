@@ -1,5 +1,7 @@
 .. index:: communications
 
+.. _communications-chapter:
+
 ==============
 Communications
 ==============
@@ -7,6 +9,24 @@ Communications
 To contact someone, you can use the following methods:
 
 .. index:: communications;irc
+
+=======
+Mailing lists
+-------------
+
+Two mailing lists are the most important:
+
+* `dev-webdev`_ is a public mailing list for all web developers in the Mozilla
+  community. Sign up for it yourself, and use it for all webdev group
+  communication that's not specific to people employed by Mozilla.
+* ``webdev@`` is an internal mailing list specific to webdevs employed by
+  Mozilla. Have your manager add you and use the list for topics that would
+  not be interesting outside the Webdev group at Mozilla.
+
+Additionally, many teams have their own, team-specific mailing lists. Check
+with your manager and have her or him add you.
+
+.. _`dev-webdev`: http://lists.mozilla.org/dev-webdev
 
 .. _irc-chapter:
 

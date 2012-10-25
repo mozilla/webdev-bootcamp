@@ -12,6 +12,10 @@ List of All Accounts (and How to Get Them)
 
 Use the links to each app to get to their signup form.
 
+* *Email* and other communication accounts
+
+  See :ref:`communications-chapter` for details.
+
 * `Bugzilla`_ — use your @mozilla.com email to get 1337 access, and
   put your IRC nick or whatever you go by in your Bugzilla username
   for easier searching (example: ``Matthew Riley MacPherson
