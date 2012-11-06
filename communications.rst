@@ -26,7 +26,7 @@ Two mailing lists are the most important:
 Additionally, many teams have their own, team-specific mailing lists. Check
 with your manager and have her or him add you.
 
-.. _`dev-webdev`: http://lists.mozilla.org/dev-webdev
+.. _`dev-webdev`: https://lists.mozilla.org/listinfo/dev-webdev
 
 .. _irc-chapter:
 
