@@ -10,7 +10,6 @@ To contact someone, you can use the following methods:
 
 .. index:: communications;irc
 
-=======
 Mailing lists
 -------------
 
@@ -18,7 +17,12 @@ Two mailing lists are the most important:
 
 * `dev-webdev`_ is a public mailing list for all web developers in the Mozilla
   community. Sign up for it yourself, and use it for all webdev group
-  communication that's not specific to people employed by Mozilla.
+  communication unless the email contains:
+
+  * Sensitive security-related information
+  * Private information about or from our partners
+  * Administrivia (PTO, WFH, etc.)
+
 * ``webdev@`` is an internal mailing list specific to webdevs employed by
   Mozilla. Have your manager add you and use the list for topics that would
   not be interesting outside the Webdev group at Mozilla.
@@ -45,7 +49,7 @@ We hang out on a bunch of different channels:
 * #input - development of `Input`_
 * #mozillians - development of `Mozillians (Community Directory)`_
 * #breakpad - development of `socorro, crash-stats, and breakpad`_
-* #mdn - development of `MDN`_
+* #mdndev - development of `MDN`_
 * #amo - development of `AMO`_
 
 .. todo::
