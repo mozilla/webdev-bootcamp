@@ -22,9 +22,10 @@ are sometimes done.
 
 .. warning::
    This document is strictly a guide.  If the documentation told you to 
-   jump off a cliff, `would you <http://xkcd.com/1170/>`_?  Likewise, if you can do something better, 
-   or if you think what's been documented is not right, challenge it and 
-   make life better for your webdev siblings.
+   jump off a cliff, `would you <http://xkcd.com/1170/>`_?  Likewise,
+   if you can do something better or if you think what's been
+   documented is not right, challenge it and make life better for your
+   webdev siblings.
 
 .. toctree::
    :maxdepth: 2
