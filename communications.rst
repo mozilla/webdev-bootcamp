@@ -24,8 +24,8 @@ Two mailing lists are the most important:
   * Administrivia (PTO, WFH, etc.)
 
 * ``webdev@`` is an internal mailing list specific to webdevs employed by
-  Mozilla. Have your manager add you and use the list for topics that would
-  not be interesting outside the Webdev group at Mozilla.
+  Mozilla. File a ServiceNow request to get subscribed to it and use the list
+  for topics that would not be interesting outside the Webdev group at Mozilla.
 
 Additionally, many teams have their own, team-specific mailing lists. Check
 with your manager and have her or him add you.
