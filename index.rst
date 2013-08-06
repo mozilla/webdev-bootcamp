@@ -38,6 +38,7 @@ are sometimes done.
    jenkins
    coding
    js-style
+   css-style
    l10n
    packaging
    data
