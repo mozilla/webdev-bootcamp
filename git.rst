@@ -162,6 +162,15 @@ fugitive.vim_ may very well be the best Git wrapper of all time.
 
 .. _fugitive.vim: https://github.com/tpope/vim-fugitive
 
+**hub**
+
+hub_ is a git wrapper (or standalone tool) that allows deep integration
+of github into your command-line git workflow. You can easily clone, fork,
+pull-request, and checkout pull-requests locally. Read the page and install
+it now.
+
+.. _hub: http://hub.github.com/
+
 Oh My Zsh
 ~~~~~~~~~
 
