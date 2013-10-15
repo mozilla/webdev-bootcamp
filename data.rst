@@ -14,17 +14,15 @@ Socorro uses postgres and HBase.
 Production Data
 ---------------
 
-Sometimes having production-like data is necessary for debugging.
-Private data relating to users *must* remain on the Mozilla network.
-Therefore,
-there are two options for
-getting Production or production-like MySQL data.
+Sometimes having production-like data is necessary for debugging. Private data
+relating to users *must* remain on the Mozilla network. Therefore, there are two
+options for getting Production or production-like MySQL data.
 
 Anonymous Data
 ~~~~~~~~~~~~~~
 
-In `~ddash/anonymize` On `webdev1.db.scl3.mozilla.com` on the Mozilla/MPT VPN are
-anonymized dumps of production data for:
+In `~ddash/anonymize` On `webdev1.db.scl3.mozilla.com` on the Mozilla/MPT VPN
+are anonymized dumps of production data for:
 
     * AMO
     * FlightDeck
@@ -38,8 +36,7 @@ Input Data
 
 .. highlight:: bash
 
-You can get a copy of the
-Firefox Input database by using the following script::
+You can get a copy of the Firefox Input database by using the following script::
 
         set -e
         FILE=input_mozilla_com.`date +%Y.%m.%d`.sql.gz
@@ -59,5 +56,5 @@ Be sure to replace ``username`` with your actual LDAP username.
 Webdev Database Cluster
 ~~~~~~~~~~~~~~~~~~~~~~~
 Alternately, many production databases have copies running on
-`webdev1.db.scl3.mozilla.com` and `webdev2.db.scl3.mozilla.com`. You can connect directly to
-these servers.
+`webdev1.db.scl3.mozilla.com` and `webdev2.db.scl3.mozilla.com`. You can connect
+directly to these servers.

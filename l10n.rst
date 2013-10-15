@@ -39,8 +39,8 @@ Now in your project root::
     svn co https://svn.mozilla.org/projects/l10n-misc/trunk/$MYPROJECTNAME \
     locale
 
-Anytime you make changes using the ``merge`` or ``extract`` commands you'll
-need to commit them back to SVN::
+Anytime you make changes using the ``merge`` or ``extract`` commands you'll need
+to commit them back to SVN::
 
     cd locale/
     svn add *
@@ -61,9 +61,11 @@ Adding new locales (non-django)
 
     See :ref:`playdoh:l10n` in Playdoh for django instructions
 
-To add a new locale to an existing project, go to the Verbatim project admin page, e.g., https://localize.mozilla.org/projects/mdn/admin.html
+To add a new locale to an existing project, go to the Verbatim project admin
+page, e.g., https://localize.mozilla.org/projects/mdn/admin.html
 
-Use the dropdown at the bottom of the list of locales to add the new locale to verbatim
+Use the dropdown at the bottom of the list of locales to add the new locale to
+verbatim
 
 ssh to the verbatim box and add the new locale to svn::
 
@@ -88,7 +90,8 @@ Adding a new text domain (non-django)
 
 Sometimes in a single project you need to use more than one translatable module.
 A text domain is a handle for each module with different .po files. For example,
-MDN uses separate text domains for the MDN website and the `Promote MDN WordPress plugin`_.
+MDN uses separate text domains for the MDN website and the `Promote MDN
+WordPress plugin`_.
 
 You can still use Verbatim to translate these other text domains alongside the
 primary domain.
@@ -114,5 +117,3 @@ Make this better
 This process is merely a suggestion. If you think localization can be improved
 or perhaps automated, by all means... **DO IT!** If your improvement takes off
 update this, so others can benefit.
-
-
