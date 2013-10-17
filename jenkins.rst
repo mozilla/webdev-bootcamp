@@ -7,19 +7,19 @@ Jenkins: Continuous Integration
 ===============================
 
 
-We have a public instance of Jenkins_ (formerly Hudson). For most
-projects it runs their python test suite. Optionally we use it to do
-JS testing as well as any menial tasks that need to be done regularly,
-like packaging. If you break things you will be warned in IRC.
+We have a public instance of Jenkins_ (formerly Hudson). For most projects it
+runs their python test suite. Optionally we use it to do JS testing as well as
+any menial tasks that need to be done regularly, like packaging. If you break
+things you will be warned in IRC.
 
 .. _jenkins: https://ci.mozilla.org/
 
 Adding a new Project
 --------------------
 
-If you've got tests (which you should), and you are deploying to production,
-you might want to add your project to Jenkins_.  This let's the world know just
-how wonderful you are at writing tests.
+If you've got tests (which you should), and you are deploying to production, you
+might want to add your project to Jenkins_. This let's the world know just how
+wonderful you are at writing tests.
 
 Asumming you're working on ``mozilla/awesome_project``, you'll need to:
 

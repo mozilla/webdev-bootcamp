@@ -31,8 +31,8 @@ When doing that, follow the `Restructured Text primer`_.
 ReadTheDocs
 -----------
 
-`Read The Docs <http://readthedocs.org/>`_ hosts documentation for
-applications and libraries written in Python.
+`Read The Docs <http://readthedocs.org/>`_ hosts documentation for applications
+and libraries written in Python.
 
 The `Getting Started
 <http://readthedocs.org/docs/read-the-docs/en/latest/getting_started.html>`_

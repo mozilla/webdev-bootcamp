@@ -27,8 +27,8 @@ Two mailing lists are the most important:
   Mozilla. File a ServiceNow request to get subscribed to it and use the list
   for topics that would not be interesting outside the Webdev group at Mozilla.
 
-Additionally, many teams have their own, team-specific mailing lists. Check
-with your manager and have her or him add you.
+Additionally, many teams have their own, team-specific mailing lists. Check with
+your manager and have her or him add you.
 
 .. _`dev-webdev`: https://lists.mozilla.org/listinfo/dev-webdev
 
@@ -37,9 +37,9 @@ with your manager and have her or him add you.
 IRC
 ---
 
-There's a Mozilla IRC server at ``irc.mozilla.org``. The `Mozilla IRC
-server`_ page on the wiki talks about how to connect, how to ask
-questions, and other things.
+There's a Mozilla IRC server at ``irc.mozilla.org``. The `Mozilla IRC server`_
+page on the wiki talks about how to connect, how to ask questions, and other
+things.
 
 We hang out on a bunch of different channels:
 
