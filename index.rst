@@ -36,6 +36,7 @@ Despite all that, web developing at Mozilla can still be challenging. The
    css-style
    l10n
    packaging
+   security
    data
    servers
    errors
