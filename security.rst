@@ -6,7 +6,29 @@ applications for Mozilla. While there is a web security team, building secure
 services is your responsibility, too. This guide will give you a quick heads-up
 on important topics.
 
-.. security team, etc.?
+Involving the Security Team
+---------------------------
+
+The security teams can be easily involved by setting the ``sec-review`` flag
+to ``?`` in Bugzilla. It is highly encouraged to do that early in the developement
+process. For bigger projects the `Security Review Process`_ should be taken
+into account, so that security considerations are resolved before the day of
+deployment dawns. If you have small questions, feel free to flag someone for ``feedback`` or ask in #security on IRC.
+
+
+X-Frame-Options
+---------------
+
+X-Frame-Options (XFO) is a security header (i.e. in your HTTP response) that
+states whether your site should be framed or not. For several reasons laid out
+in this `blog post`_, you should default to **DENY**.
+
+If you do need to be framed, you can restrict this to web pages in the same
+origin (people sometimes think "same domain", but it's actually the protocol,
+domain name and port forming the security scope of a website).
+There are detailed docs about `XFO on MDN`_ and there are additional resources
+that show you how to set up X-Frame-Options in your `Django`_ and `NodeJS`_
+projects.
 
 
 Content Security Policy
