@@ -49,7 +49,7 @@ layer on top of your other defenses (this concept is called defense in depth).
 In consequence, adversaries have to overcome multiple hurdles until they can do
 harm, increasing the cost of the attack.
 
-`CSP 1.1`_ is already being drafted at the w3c, but you should focus on CSP 1.0
+`CSP 1.1`_ is already being drafted at the W3C, but you should focus on CSP 1.0
 - mainly because of its wide adoption among browsers. There are multiple
 `MDN pages`_ giving greater detail on some of the topics of the following
 paragraphs.
@@ -66,7 +66,7 @@ examples.
     ``*`` wildcards pose a security risk and should be completely avoided in
     critical directives like ``style-src``, ``object-src`` and ``script-src``.
     If you are unsure about a certain case, members of the web security team
-    will gladly help (``fbraun``).
+    will gladly help (See `Involving the Security Team`_).
 
 So, how is CSP able to mitigate XSS and similar attacks? Your whitelist enables
 you to only include origins you trust. It might prove difficult and much more
@@ -74,9 +74,9 @@ risky for an attacker to compromise one of the trusted hosts. However, there is
 a caveat to the protection of CSP. Since the origin of inline code cannot be
 decided upon by the browser (was it intended or attacker-injected?), it is
 blocked by default. Furthermore, since eval-like constructs pose a security risk
-if an attacker is able to inject code, they is disabled by default, too.
+if an attacker is able to inject code, they are disabled by default, too.
 
-There may be occasions, where such CSP-incompatible code is unavoidable. but in
+There may be occasions, where such CSP-incompatible code looks unavoidable. but in
 general you should always strive to follow these guidelines:
 
 * Don't use inline JavaScript code. This includes inline script elements
@@ -92,19 +92,27 @@ general you should always strive to follow these guidelines:
 
 Here are some general strategies to avoid such code:
 
-* Inline script elements -> externalized script elements
-* Inline event handlers -> attach event handler via external script
-  (addEventListener) after it is availble in the DOM or let event bubbling
-  work for you (e.g. JQuery's $.live).
-* JS pseudo protocol -> attach click event handler to the node
-* Inline style elements -> externalize CSS code
-* Inline style attributes -> add classes/IDs to your markup and add to external
-  CSS
-* Inline style attributes which were set via JavaScript -> use APIs like
-  node.style
+:Inline script elements:
+    Should go into a JS file.
+:Inline event handlers:
+    Attach event handler through a DOMContentLoaded event in an external JS file
+    (addEventListener) or let event bubbling work for you (e.g. JQuery's $.live).
+:JS pseudo protocol:
+    Attach click event handler to the node (see above)
+:Inline style elements:
+    These can be easily put into an external CSS file
+:Inline style attributes:
+    Add classes or IDs to your markup and handle those in an external CSS file
+:Inline style attributes which are set via JavaScript:
+    Use the ``elmt.style`` attribute instead of ``elmt.setAttribute``.
 
 
 .. _`all major browsers`: http://caniuse.com/#search=content%20security%20policy
 .. _`Content Security Policy`: http://www.w3.org/TR/CSP/
 .. _`CSP 1.1`: https://dvcs.w3.org/hg/content-security-policy/raw-file/tip/csp-specification.dev.html
 .. _`MDN pages`: https://developer.mozilla.org/en/docs/Security/CSP
+.. _`Security Review Process`: https://wiki.mozilla.org/Security/ReviewProcess
+.. _`blog post`: https://blog.mozilla.org/security/2013/12/12/on-the-x-frame-options-security-header/
+.. _`XFO on MDN`: https://developer.mozilla.org/en-US/docs/HTTP/X-Frame-Options
+.. _`Django`: https://docs.djangoproject.com/en/dev/ref/clickjacking/#
+.. _`NodeJS`: https://npmjs.org/package/helmet
