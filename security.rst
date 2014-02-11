@@ -52,7 +52,7 @@ risky for an attacker to compromise one of the trusted hosts. However, there is
 a caveat to the protection of CSP. Since the origin of inline code cannot be
 decided upon by the browser (was it intended or attacker-injected?), it is
 blocked by default. Furthermore, since eval-like constructs pose a security risk
-if an attacker is able to inject code, they is disabled by default, too.
+if an attacker is able to inject code, they are disabled by default, too.
 
 There may be occasions, where such CSP-incompatible code is unavoidable. but in
 general you should always strive to follow these guidelines:
@@ -70,16 +70,32 @@ general you should always strive to follow these guidelines:
 
 Here are some general strategies to avoid such code:
 
-* Inline script elements -> externalized script elements
-* Inline event handlers -> attach event handler via external script
-  (addEventListener) after it is availble in the DOM or let event bubbling
-  work for you (e.g. JQuery's $.live).
-* JS pseudo protocol -> attach click event handler to the node
-* Inline style elements -> externalize CSS code
-* Inline style attributes -> add classes/IDs to your markup and add to external
-  CSS
-* Inline style attributes which were set via JavaScript -> use APIs like
-  node.style
+* Inline script elements have to be combined to externalized scripts and loaded
+  via ``<script src="URL"></script>``. In consequence, you trade some
+  performance for additional security.
+* Inline event handlers can be completely avoided with two strategies: First,
+  you can attach event handlers via external scripts, using the addEventListener
+  API of JavaScript. Additionally, you can let even bubbling work for you (e.g.
+  JQuery's ``$.live``).
+* The JS pseudo protocol can be entirely avoided with attached click event
+  handlers.
+* Code in inline style elements can be externalized to CSS files and loaded via
+  ``<link>``.
+* Avoiding inline style attributes can be achieved with a clean structure of the
+  document and potentially adding classes/IDs to your markup. This should give
+  you plenty of options to select the corresponding nodes from an external
+  stylesheet.
+* If your code sets style attributes with JavaScript, you might want to consider
+  using APIs like ``node.style``.
+* Double-check all your eval-using code. Does it really need eval? If it does,
+  you generally can't avoid whitelisting 'unsafe-eval'.
+
+
+Projects simplifying the use of CSP
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Python/Django: https://github.com/mozilla/django-csp
+* Node.js/Express: https://github.com/evilpacket/helmet
 
 
 .. _`all major browsers`: http://caniuse.com/#search=content%20security%20policy
