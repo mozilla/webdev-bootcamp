@@ -1,10 +1,9 @@
 Security
 ========
 
-As you are reading this guide, it can be assumed that you will be building web
-applications for Mozilla. While there is a web security team, building secure
-services is your responsibility, too. This guide will give you a quick heads-up
-on important topics.
+While there is a web security team, building secure services is your
+responsibility, too. This guide will give you a quick heads-up on important
+topics.
 
 Involving the Security Team
 ---------------------------
@@ -41,8 +40,8 @@ Content Security Policy
     find it substantially harder to apply CSP to existing projects because of
     the way it restrains the capabilities of your code.
 
-`Content Security Policy`_ (CSP) is a mechanism, which is able to mitigate some
-client-side attacks on web applications, like Cross-Site Scripting (XSS). Except
+`Content Security Policy`_ (CSP) is a mechanism which is able to mitigate some
+client-side attacks on web applications, like Cross-Site Scripting (XSS). Aside
 from Internet Explorer, it is implemented in `all major browsers`_. As CSP does
 not prevent flaws from being exploited but merely mitigates the effects, you
 should never solely rely on it. However, CSP can be seen as another security
