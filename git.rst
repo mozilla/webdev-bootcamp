@@ -33,7 +33,7 @@ yourself is a bit different than working with others, but start with some basic
 (multiple origins, rebasing, etc.) will make more sense.
 
 .. _Help.Github: http://help.github.com/
-.. _`Pro Git`: http://progit.org/book/
+.. _`Pro Git`: http://git-scm.com/book/
 .. _`list of git resources on StackOverflow`: http://stackoverflow.com/questions/315911/git-for-beginners-the-definitive-practical-guide
 
 Git Practices at Mozilla
