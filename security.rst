@@ -5,6 +5,7 @@ While there is a web security team, building secure services is your
 responsibility, too. This guide will give you a quick heads-up on important
 topics.
 
+
 Involving the Security Team
 ---------------------------
 
