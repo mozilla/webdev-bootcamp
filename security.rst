@@ -60,8 +60,7 @@ CSP usage
     If you are unsure about a certain case, members of the web security team
     will gladly help (See `Involving the Security Team`_).
 
-There may be occasions, where such CSP-incompatible code looks unavoidable but
-in general you should always strive to follow these guidelines:
+To avoid CSP problems, follow these guidelines:
 
 * Don't use inline JavaScript code. This includes inline script elements
   (``<script>code</script>``), inline event handlers (e.g.
