@@ -73,7 +73,7 @@ To avoid CSP problems, follow these guidelines:
   ``setInterval('string', time)``, ``Function('string')()`` or any other
   eval-like construct.
 
-Here are some general strategies to avoid such code:
+Here are some strategies for avoiding common CSP errors:
 
 :Inline script elements:
     Should go into a JS file.
