@@ -88,7 +88,7 @@ Here are some general strategies to avoid such code:
 :Inline style attributes:
     Add classes or IDs to your markup and handle those in an external CSS file
 :Inline style attributes which are set via JavaScript:
-    Use the ``elmt.style`` property instead of ``elmt.setAttribute``.
+    Use the ``element.style`` property instead of ``element.setAttribute``.
 
 
 Projects simplifying the use of CSP
