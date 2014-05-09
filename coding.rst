@@ -54,12 +54,13 @@ correct to the best of our knowledge. See :ref:`ci-chapter`.
 Python
 ------
 
-We do what others in the python community have established:
+We do what others in the Python community have established:
 
 * We follow PEP8_.
-* We test using check.py_ which combines `pep8.py` and `pyflakes`.
+* We test using `flake8` which combines `pep8.py` and `pyflakes`.
 * We follow Pocoo_'s extensions of PEP8_ as they are well thought out.
-
+* You might also consider `baked` which enforces the import order in this
+  guide.
 
 Import Statements
 ^^^^^^^^^^^^^^^^^
@@ -168,11 +169,37 @@ Use single quotes unless double (or triple) quotes would be an improvement::
 
     '''nobody really does this'''
 
+To continue a new line use a ```()``` not ```\```.
+
+Indenting code should be done in one of two ways: a hanging indent, or 4 space
+indent on the next line.
+
+Good, using hanging indent. Note that the next line is lined up with the
+previous line delimiter::
+
+    log.msg('Something long log message and some vars: {0}, {1}'
+            .format(variable_a, variable_b))
+
+Good using 4 spaces::
+
+    accounts = PaymentAccounts.objects.filter(
+        accounts__provider__type=2,
+        something_else=True
+    )
+
+    accounts = (PaymentAccounts.objects
+        .filter(accounts__provider__type=2)
+        .exclude(something_else=False)
+    )
+
+Remember the golden rule of pep 8: **A Foolish Consistency is the Hobgoblin of
+Little Minds**. Generally with indenting, do what makes sense and is logically
+easy to read. Really dense code is as hard to read as really spread out code.
 
 .. _PEP8: http://www.python.org/dev/peps/pep-0008/
-.. _check.py: https://github.com/jbalogh/check
+.. _flake8: https://pypi.python.org/pypi/flake8
 .. _Pocoo: http://www.pocoo.org/internal/styleguide/
-
+.. _baked: https://pypi.python.org/pypi/baked
 
 .. index:: code;django coding style
 
