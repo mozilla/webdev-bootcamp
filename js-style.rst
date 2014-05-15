@@ -134,12 +134,11 @@ Functions
 Named Functions
 ~~~~~~~~~~~~~~~
 
-**Always** name functions, even if assigned to another variable or property.
-This improves error stacks when debugging.
+Not necessary.
 
 No space between name and opening paren. Space between closing paren and brace::
 
-    var method = function doSomething(argOne, argTwo) {
+    var method = function(argOne, argTwo) {
 
     }
 
