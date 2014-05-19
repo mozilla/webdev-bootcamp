@@ -134,12 +134,34 @@ Functions
 Named Functions
 ~~~~~~~~~~~~~~~
 
-**Always** name functions, even if assigned to another variable or property.
-This improves error stacks when debugging.
+There's no need to explicitly name a function when you're already
+assigning it to a descriptively named symbol::
+
+    var updateOnClick = function() { ... };
+
+...or... ::
+
+    var someObject = {updateOnClick: function() { ... }
+
+Most modern JS engines will infer the name *updateOnClick* for the above
+anonymous function and use it in tracebacks.
+
+Of course, if you're passing a nontrivial function as an argument, you
+should still contrive to name it somehow. The meaning here would be
+needlessly obscured if the anonymous function were, for example, 10 lines long::
+
+    .forEach(function() { ... })
+
+In such cases, either name the function, or pass a descriptively named
+symbol that points to a function.
+
+
+Whitespacing Functions
+~~~~~~~~~~~~~~~~~~~~~~
 
 No space between name and opening paren. Space between closing paren and brace::
 
-    var method = function doSomething(argOne, argTwo) {
+    var method = function(argOne, argTwo) {
 
     }
 
