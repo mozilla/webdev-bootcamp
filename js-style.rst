@@ -135,26 +135,20 @@ Named Functions
 ~~~~~~~~~~~~~~~
 
 There's no need to explicitly name a function when you're already
-assigning it to a descriptively named symbol:
-
-::
+assigning it to a descriptively named symbol::
 
     var updateOnClick = function() { ... };
 
-...or...
+...or... ::
 
-::
+    var someObject = {updateOnClick: function() { ... }
 
-    var someObejct = {updateOnClick: function() { ... }
-
-Most modern JS engines will infer the name updateOnClick for the above
+Most modern JS engines will infer the name *updateOnClick* for the above
 anonymous function and use it in tracebacks.
 
 Of course, if you're passing a nontrivial function as an argument, you
 should still contrive to name it somehow. The meaning here would be
-needlessly obscured if the anonymous function were 10+ lines long:
-
-::
+needlessly obscured if the anonymous function were, for example, 10 lines long::
 
     .forEach(function() { ... })
 
