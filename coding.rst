@@ -215,12 +215,19 @@ It will also noticeably break so dead-links don't linger in your code.
 
 .. highlight:: jinja
 
-Indentation within templates should be handled as such::
+Indent only two spaces in templates::
 
     {% if indenting %}
-      <p>This is how it's done</p>
+      <div class="example">
+        <p>This is how it's done.</p>
+      </div>
     {% endif %}
 
+This deviates from the standard four space indentation we recommend for other 
+coding languages. HTML lends itself to a lot of nested elements and indenting 
+each level four spaces can quickly lead to long lines and messy formatting. 
+Indenting two spaces in templates can make it easier to manage. Use four spaces 
+everywhere else. 
 
 .. index:: playdoh
 
