@@ -220,11 +220,11 @@ Example::
 
     @font-face {
         font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: normal;
         src: url(/media/fonts/OpenSans-Bold-webfont.eot?#iefix) format('embedded-opentype'),
              url(/media/fonts/OpenSans-Bold-webfont.woff) format('woff'),
              url(/media/fonts/OpenSans-Bold-webfont.ttf) format('truetype');
-        font-weight: normal;
-        font-style: normal;
     }
 
 
@@ -387,11 +387,11 @@ Naming conventions
 | **Bad:** ``.big-blue-button``, ``.right-column``, ``.small``
 | **Good:** ``.button-submit``, ``.content-sub``, ``.field-note``
 
-Many CSS frameworks, such as Twitter's Bootstrap and Zurb's Foundation, define a
-lot of presentational classes for things like column widths, font sizes, and
-button styles. If you're using such a framework, use those classes as mixins in
-a preprocessed style sheet, rather than littering markup with presentational
-names.
+Many CSS frameworks, such as Twitter's Bootstrap and Zurb's Foundation, define
+a lot of presentational classes for things like column widths, font sizes,
+and button styles. If you're using such a framework, you can use those classes
+as mixins in a preprocessed style sheet, rather than littering markup
+with presentational names.
 
 **Bad**::
 
@@ -404,9 +404,20 @@ names.
         .col-md-offset-2;
     }
 
-Names should be as short as possible and as long as necessary. Clarity is key.
-E.g. ``.prime-nav`` is better than ``.primary-navigation``, but
-``.article-author`` is better than ``.art-auth``.
+.. Note::
+    
+    For very large and complex sites, excessively repeating common declarations 
+    can lead to a lot of redundancy and CSS bloat. In those cases you can get 
+    better performance with some presentational classes if it leads to a 
+    significantly lighter style sheet. E.g. it can speed up a site considerably 
+    to specify column widths with a class in a few dozen HTML templates than to 
+    repeat the same width, float, and margin declarations a thousand times in 
+    CSS. We don't have many sites operating on the kind of scale that warrants 
+    that approach, but there are always exceptions.
+
+Names should be as short as possible and as long as necessary.
+Clarity is key. E.g. ``.prime-nav`` is better than ``.primary-navigation``,
+but ``.article-author`` is better than ``.art-auth``.
 
 | Avoid overly abstract names that require a cheat sheet to understand.
 | **Bad:** ``.color12``, ``.r2-c6``, ``.v``
