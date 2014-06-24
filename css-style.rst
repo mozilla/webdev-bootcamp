@@ -38,6 +38,7 @@ The basics (tl;dr)
 * Order sections and rules from general to specific.
 * Comment a lot, use `KSS`_ for structure.
 * Use Stylus but write it like plain CSS.
+* Consider screen readers when hiding elements.
 
 .. _KSS: http://warpspire.com/kss/
 
@@ -97,6 +98,16 @@ browsers that don't support `rgba()` or gradients::
         background: #ccc;
         background: linear-gradient(rgba(155, 155, 155, .25), rgba(155, 155, 155, .5));
     }
+
+Hiding content
+~~~~~~~~~~~~~~
+
+Consider screen readers when hiding content. Screen readers will not read
+content that is ``display: none;`` or ``visibility: hidden;``. Hiding something
+visually but not from screen readers requires
+[a bit more CSS](http://webaim.org/techniques/css/invisiblecontent/).
+
+Be conscientious when choosing your hiding technique.
 
 Simple selectors
 ~~~~~~~~~~~~~~~~
@@ -405,14 +416,14 @@ with presentational names.
     }
 
 .. Note::
-    
-    For very large and complex sites, excessively repeating common declarations 
-    can lead to a lot of redundancy and CSS bloat. In those cases you can get 
-    better performance with some presentational classes if it leads to a 
-    significantly lighter style sheet. E.g. it can speed up a site considerably 
-    to specify column widths with a class in a few dozen HTML templates than to 
-    repeat the same width, float, and margin declarations a thousand times in 
-    CSS. We don't have many sites operating on the kind of scale that warrants 
+
+    For very large and complex sites, excessively repeating common declarations
+    can lead to a lot of redundancy and CSS bloat. In those cases you can get
+    better performance with some presentational classes if it leads to a
+    significantly lighter style sheet. E.g. it can speed up a site considerably
+    to specify column widths with a class in a few dozen HTML templates than to
+    repeat the same width, float, and margin declarations a thousand times in
+    CSS. We don't have many sites operating on the kind of scale that warrants
     that approach, but there are always exceptions.
 
 Names should be as short as possible and as long as necessary.
