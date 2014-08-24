@@ -23,5 +23,9 @@ If you'd like to build the bootcamp locally:
 
 The resulting docs can be located under the ``_build/html`` directory.
 
+You can also run ``make livehtml`` to launch a webserver on
+http://127.0.0.1:8000 that auto-rebuild the documentation when any files are
+changed.
+
 .. _pip: https://pip.pypa.io/
 .. _virtualenv: https://virtualenv.pypa.io/
