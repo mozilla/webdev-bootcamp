@@ -1,16 +1,15 @@
 Security
 ========
 
-While there is a web security team, building secure services is your
-responsibility, too. This guide will give you a quick heads-up on important
-topics.
+This guide will give you a quick heads-up on important security topics to keep
+in mind as you work on your projects.
 
 
 Involving the Security Team
 ---------------------------
 
 The security teams can be easily involved by setting the ``sec-review`` flag to
-``?`` in Bugzilla. It is highly encouraged to do that early in the developement
+``?`` in Bugzilla. It is highly encouraged to do that early in the development
 process. For bigger projects the `Security Review Process`_ should be taken into
 account, so that security considerations are resolved before the day of
 deployment dawns. If you have small questions, feel free to flag someone for

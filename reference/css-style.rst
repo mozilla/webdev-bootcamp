@@ -40,7 +40,7 @@ The basics (tl;dr)
 General guidelines
 ------------------
 
-If a length value is `0`, do not specify units; ``0px`` and ``0in`` are exactly
+If a length value is ``0``, do not specify units; ``0px`` and ``0in`` are exactly
 equal because zero is zero.
 
 Omit leading zeroes in decimal units, e.g. ``.75em``, not ``0.75em``.
@@ -56,7 +56,7 @@ syntax`_ unless, for some reason, you need to target old versions of Safari.
 .. _old Webkit syntax: http://www.webkit.org/blog/175/introducing-css-gradients/
 
 Practice progressive enhancement! Include solid fallback colors for old
-browsers that don't support `rgba()` or gradients::
+browsers that don't support ``rgba()`` or gradients::
 
     .widget {
         background: #ccc;
@@ -68,8 +68,8 @@ Hiding content
 
 Consider screen readers when hiding content. Screen readers will not read
 content that is ``display: none;`` or ``visibility: hidden;``. Hiding something
-visually but not from screen readers requires 
-`a bit more CSS <http://webaim.org/techniques/css/invisiblecontent/>`_. Be 
+visually but not from screen readers requires
+`a bit more CSS <http://webaim.org/techniques/css/invisiblecontent/>`_. Be
 conscientious when choosing your hiding technique.
 
 
@@ -139,7 +139,7 @@ context on any page. Use descendant selectors judiciously but keep them simple.
         font: 16px Georgia, serif;
     }
 
-Avoid ``!important`` in CSS unless absolutely necessary, **which it almost 
+Avoid ``!important`` in CSS unless absolutely necessary, **which it almost
 never is**.
 
 Some off-the-shelf frameworks/libraries/plugins include ``!important`` styles of
@@ -155,37 +155,37 @@ Fonts and typography
 It's alright to use pixels for ``font-size``.
 
 For many years CSS authors eschewed pixels and favored relative units for font
-sizing because IE 5 and 6 couldn't scale text set in absolute units (like `px`).
+sizing because IE 5 and 6 couldn't scale text set in absolute units (like ``px``).
 All modern browsers can scale text in any unit (or zoom the entire page) so this
 is no longer a driving concern, unless you're catering to versions of IE from
 the previous century.
 
 There are times when it's better to use relative ``font-size`` units like `em`s
 or percentages. You may have a bit of text that should be sized proportionally
-to a parent element whose font size is unknown. Some responsive designs call 
+to a parent element whose font size is unknown. Some responsive designs call
 for globally resizing text in different layouts (e.g. globally bigger text for
 mobile), in which case it's simpler to change a single base size on a parent
 than to re-declare the absolute ``font-size`` of each element.
 
 Just remember that relative font sizes inherit and cascade so you can end up
-with magic numbers like ``.6875em``. The `rem` unit (root em) can avoid the
+with magic numbers like ``.6875em``. The ``rem`` unit (root em) can avoid the
 cascade problems, but older browsers don't support rems and IE9 and 10 don't
 support them in shorthand ``font`` declarations (fixed in IE11). It's always
-something. 
+something.
 
-If you use `rem`s for font sizing, include a `px` or other fallback 
+If you use ``rem``s for font sizing, include a ``px`` or other fallback
 for older browsers.
 
 Use `unit-less line-height`_. It doesn't inherit a percentage value of its
 parent element, but instead is based on a multiplier of the font-size, whatever
-that may be. E.g. ``line-height: 1.4;`` or in a shorthand `font` property:
-``font: 14px/1.4 sans-serif;``. Don't use an absolute unit like `px` for 
-`line-height`; it creates more problems than it solves.
+that may be. E.g. ``line-height: 1.4;`` or in a shorthand ``font`` property:
+``font: 14px/1.4 sans-serif;``. Don't use an absolute unit like ``px`` for
+``line-height``; it creates more problems than it solves.
 
 .. _unit-less line-height: http://meyerweb.com/eric/thoughts/2006/02/08/unitless-line-heights/
 
-Use "`bulletproof font syntax`_" for webfonts. You usually don't need to include 
-SVG font files unless your project needs to target older versions of WebKit. 
+Use "`bulletproof font syntax`_" for webfonts. You usually don't need to include
+SVG font files unless your project needs to target older versions of WebKit.
 For modern browsers, TTF + WOFF is sufficient, as well as EOT for older
 versions of IE (which may also be optional, depending on your target audience).
 Example::
@@ -206,27 +206,27 @@ Example::
 Formatting CSS
 --------------
 
-When a rule has a group of selectors separated by commas, place each selector 
+When a rule has a group of selectors separated by commas, place each selector
 on its own line.
 
-The opening brace (`{`) of a rule's declaration block should be on the same 
-line as the selector (or the same line as the last selector in a group of 
+The opening brace (``{``) of a rule's declaration block should be on the same
+line as the selector (or the same line as the last selector in a group of
 selectors).
 
-Use a single space before the opening brace (`{`) in a rule, after the last
+Use a single space before the opening brace (``{``) in a rule, after the last
 selector.
 
 Put each declaration on its own line.
 
 Indent the declaration block one level relative to its selector.
 
-Use a colon (`:`) immediately after the property name, followed by a single
+Use a colon (``:``) immediately after the property name, followed by a single
 space, then the value.
 
-Terminate each declaration with a semicolon (`;`), including the last
+Terminate each declaration with a semicolon (``;``), including the last
 declaration in a block.
 
-Put the closing brace (`}`) on its own line, aligned with the rule's selector.::
+Put the closing brace (``}``) on its own line, aligned with the rule's selector.::
 
     .selector-1,
     .selector-2 {
@@ -238,10 +238,10 @@ Put the closing brace (`}`) on its own line, aligned with the rule's selector.::
         property: value;
     }
 
-When you have a block of related rules, each with one or two declarations, 
-you can use a single-line format without any blank lines between rules. It 
-makes the block of related rules a bit easier to scan. In this case include 
-a single space after the opening brace and before the closing brace. Add 
+When you have a block of related rules, each with one or two declarations,
+you can use a single-line format without any blank lines between rules. It
+makes the block of related rules a bit easier to scan. In this case include
+a single space after the opening brace and before the closing brace. Add
 spaces after the selector to align the values.::
 
     .message-success { color: #080; }
@@ -257,14 +257,14 @@ Or::
         100% { bottom: 30px; }
     }
 
-When possible, limit line lengths to 80 characters. This improves readability, 
-minimizes horizontal scrolling, makes it possible to view files side by side, 
-and produces more useful diffs with meaningful line numbers. There will be 
-exceptions such as long URLs or gradient syntax but most rules in CSS should 
-fit well within 80 characters even with indentation. 
+When possible, limit line lengths to 80 characters. This improves readability,
+minimizes horizontal scrolling, makes it possible to view files side by side,
+and produces more useful diffs with meaningful line numbers. There will be
+exceptions such as long URLs or gradient syntax but most rules in CSS should
+fit well within 80 characters even with indentation.
 
 Long, comma-separated property values -- such as multiple background images,
-gradients, transforms, transitions, webfonts, or text and box shadows -- can 
+gradients, transforms, transitions, webfonts, or text and box shadows -- can
 be arranged across multiple lines (indented one level from their property).::
 
     .selector {
@@ -349,7 +349,7 @@ alphabetize.
 Naming conventions
 ------------------
 
-Names should be semantically meaningful, descriptive of the element's content, 
+Names should be semantically meaningful, descriptive of the element's content,
 purpose, or function, not its presentation.
 
 | **Bad:** ``.big-blue-button``, ``.right-column``, ``.small``
@@ -570,7 +570,7 @@ we're making the call: it's Stylus for us.
 New Mozilla webdev projects should use Stylus for CSS preprocessing (or stick
 with vanilla CSS). Sites currently using LESS should work toward converting to
 Stylus as soon as practically feasible (`tools can help
-<https://gist.github.com/cvan/5061790#file-less2stylus-js>`_). LESS isn't 
+<https://gist.github.com/cvan/5061790#file-less2stylus-js>`_). LESS isn't
 forbidden, but prefer Stylus if you have a choice.
 
 
@@ -595,7 +595,7 @@ document.
 
 * Use CSS syntax (Stylus allows it).
 * Include colons, semi-colons, and braces.
-* Identify variables with a dollar sign (`$`). It's optional in Stylus
+* Identify variables with a dollar sign (``$``). It's optional in Stylus
   but makes variables easier to spot by humans.
 
 
@@ -620,12 +620,12 @@ document.
 A Note on Sass/SCSS/Compass
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Very few (if any?) Mozilla projects use `Sass <http://sass-lang.com>`_ because 
-it requires Ruby. While Sass is a fine tool, and can be awesome in combination 
-with Compass, adding Ruby to our dev stack is a bridge too far. Sorry Rubyists; 
+Very few (if any?) Mozilla projects use `Sass <http://sass-lang.com>`_ because
+it requires Ruby. While Sass is a fine tool, and can be awesome in combination
+with Compass, adding Ruby to our dev stack is a bridge too far. Sorry Rubyists;
 we're a Python shop.
 
-Even so, all the same formatting and organizational guidelines can apply just 
+Even so, all the same formatting and organizational guidelines can apply just
 as well to Sass/SCSS. Live long and prosper.
 
 

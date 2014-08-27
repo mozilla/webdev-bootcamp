@@ -1,0 +1,192 @@
+Internationalization (i18n) and Localization (L10n)
+===================================================
+
+Mozilla is a global community, and most of our websites are localized, meaning
+that they are available in multiple languages for users across the world.
+
+Internationalization is the process of designing software so that it may be
+adapted to different languages and regions, whereas localization is the actual
+process of adapting that software to a specific locale.
+
+This document describes what you need to be aware of while developing software
+intended for a global community.
+
+.. note:: The examples in this document are using `Jinja2`_ syntax. While the
+   concepts are generally the same, the exact syntax may differ between
+   projects.
+
+   There are also a few `jingo`_-specific filters being used. Again, be sure
+   to check the syntax for your specific project.
+
+.. seealso::
+
+   `Mozilla Wiki: Localizing Projects and Content <wiki-L10n-new-project>`_
+      A short guide on how to start the process of getting a new project
+      localized by the Mozilla L10n team.
+
+.. _Jinja2: http://jinja.pocoo.org/
+.. _jingo: https://github.com/jbalogh/jingo
+.. _wiki-L10n-new-project: https://wiki.mozilla.org/L10n:NewProjects
+
+How does L10n work?
+-------------------
+
+In practice, most of Webdev's L10n work involves making sure all English
+strings that are shown to users are marked for L10n by wrapping them in a
+translation function. Typically, a translation function takes the English
+string you want to display as an argument, and when the website is rendered,
+the function returns the translated version of that string for the user's
+locale.
+
+Here's an example of some HTML marked up for translation:
+
+.. code-block:: jinja
+
+   <p>{{ _('I am a short translated string!') }}</p>
+   <p>
+     {% trans %}
+       Sometimes text that is much longer can be put in a special tag that
+       is easier to read!
+     {% endtrans %}
+   </p>
+   <p>{{ _('There is %s variable in this string.')|fe(1) }}</p>
+   <p>
+     {% trans replacement='variables' %}
+       Larger blocks can have {{ replacement }} too!
+     {% endtrans %}
+   </p>
+
+In this case, the ``_`` function, as well as the ``{% trans %}`` block, both
+display different text depending on the user's locale. The text that is shown
+is stored in a file that maps the English text to the translated text. It is
+this file that localizers produce when translating a site.
+
+There are several different file formats for translation files, but the most
+common ones are:
+
+- `PO files`_ are a format supported by the `GNU gettext`_ program, and are
+  very common and well-supported by tools.
+- `.lang files`_ is a format similar to PO files but simplified. They don't
+  support more advanced features like plural forms.
+
+After marking text up for translation, you will typically run some sort of
+extraction process to update these files with the new strings you've added.
+Once you've successfully updated these files, you upload them to whatever
+service your project stores them in for translation. Refer to your project's
+documentation for more details.
+
+.. seealso::
+
+   `Tower`_
+      A Python library that extends Jinja's i18n extension with additional
+      features. Most Django-based Mozilla projects use this for extraction.
+
+.. _PO Files: https://www.gnu.org/software/gettext/manual/gettext.html#PO-Files
+.. _GNU gettext: https://www.gnu.org/software/gettext/
+.. _.lang files: https://github.com/pascalchevrel/langchecker/wiki/.lang-files-format
+.. _Tower: https://github.com/clouserw/tower
+
+Marking up text for L10n
+------------------------
+
+Marking up text to be translated is pretty straightforward:
+
+.. code-block:: jinja
+
+   <p>{{ _('I am a short translated string!') }}</p>
+   <p>
+     {% trans %}
+       Sometimes text that is much longer can be put in a special tag that
+       is easier to read!
+     {% endtrans %}
+   </p>
+
+If you need to insert a variable into a translated string:
+
+.. code-block:: jinja
+
+   <p>{{ _('There is %(count)s variable in this string.')|fe(count=1) }}</p>
+   <p>
+     {% trans replacement='variables' howmany='multiple' %}
+       Larger blocks can have {{ replacement }} too! Even {{ howmany }} ones!
+     {% endtrans %}
+   </p>
+
+The wording of some text may change depending on the amount of items you're
+talking about. Supporting strings that change depending the amount of something
+is called *pluralization*:
+
+.. code-block:: jinja
+
+   <p>{{ ngettext('%(num)d apple', '%(num)d apples', apples|count) }}</p>
+   <p>
+     {% trans count=apples|count %}
+       There is {{ count }} apple.
+     {% pluralize %}
+       There are {{ count }} apples.
+     {% endtrans %}
+   </p>
+
+You can often add notes describing a string to be translated using comments.
+These comments are shown to translators to help them figure out the right
+wording to use:
+
+.. code-block:: jinja
+
+   {# L10n: "They" refers to a group of people here. #}
+   <p>{{ _('They had no idea what was coming.') }}</p>
+
+Things to keep in mind
+----------------------
+
+- Avoid unnecessary complexity in strings. In particular, avoid including HTML
+  in strings as much as possible. If you must include HTML, use a ``<span>`` or
+  similar tag with no class, and wrap the string in another tag with any class
+  or ID you need.
+
+  .. code-block:: jinja
+
+     {# WRONG #}
+     {{ _('Check out the new <a href="http://mozilla.org" rel="external">website</a>!') }}
+
+     {# RIGHT #}
+     {{ _('Check out the new <a {{ link_attrs }}>website</a>!')
+        |fe('href="http://mozilla.org" rel="external"') }}
+
+- Languages vary wildly in how they work. Some languages put punctuation at the
+  beginning of sentences. Some languages have a different word for 1 item, 3
+  items, 10 items, and 22 or more items. Some languages use very long words
+  with no spaces to describe things. Some languages read right to left. Some
+  languages put the subject of a sentence at the end.
+
+  The point is, never make any assumptions about how translated text will be
+  structured. One example is assuming that a greeting comes before a name:
+
+  .. code-block:: jinja
+
+     {# WRONG #}
+     <p>{{ _('Welcome back,') }} {{ user_name }}</p>
+
+     {# RIGHT #}
+     <p>{{ _('Welcome back, %(user_name)s')|fe(user_name=user_name) }}</p>
+
+- If the text you're marking up uses any locale-specific idioms that may be
+  confusing to people outside your locale, add a comment explaining the
+  meaning.
+
+  .. code-block:: jinja
+
+     {# L10n: "Well I'll be a monkey's uncle" is an expression that means
+              "This is a surprise!" #}
+     <p>{{ _("Well I'll be a monkey's uncle, you've got a new badge!") }}</p>
+
+- When displaying things like numbers or dates, make sure to use a library like
+  `Babel`_ to format them properly for the user's locale. For example, many
+  locales use spaces instead of commas to split up large numbers.
+
+.. seealso::
+
+   `Creating localizable web applications <https://developer.mozilla.org/docs/Web_Localizability/Creating_localizable_web_applications>`_
+      A guide with further tips written by the Mozilla L10n team.
+
+.. _Babel: http://babel.pocoo.org/

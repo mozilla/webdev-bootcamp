@@ -131,6 +131,8 @@ Space after keyword, and space before curly
 Functions
 ---------
 
+.. _named-functions:
+
 Named Functions
 ~~~~~~~~~~~~~~~
 
@@ -163,13 +165,15 @@ No space between name and opening paren. Space between closing paren and brace::
 
     var method = function(argOne, argTwo) {
 
-    }
+    };
 
 
 Anonymous Functions
 ~~~~~~~~~~~~~~~~~~~
 
-You're doing it wrong. See above about named functions.
+Anonymous functions are fine if they have a small amount of code in them. See
+the :ref:`named-functions` section for info about inferred function names for
+anonymous functions.
 
 
 Operators
