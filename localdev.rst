@@ -5,7 +5,7 @@ For many sites (AMO, SUMO, Input, etc), developing locally is an easy
 achievement.
 
 Developing locally allows you to be able to work anywhere without relying on
-network connectivity or being.
+network connectivity.
 
 .. index::
    single: mac
