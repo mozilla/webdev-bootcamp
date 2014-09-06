@@ -12,7 +12,7 @@ network connectivity.
    single: osx
    pair: git;installation
 
-Homebrew (Mac OS X)
+Homebrew (OS X)
 -------------------
 
 Most web developers choose a MacBook Pro as their development machine.
@@ -33,7 +33,7 @@ compile, you can create your own recipes.
 
 .. _playdoh: https://github.com/mozilla/playdoh
 
-Xcode (Mac OS X)
+Xcode (OS X)
 ----------------
 
 You need Apple's Xcode to compile packages. If you're on the Mozilla network (in
