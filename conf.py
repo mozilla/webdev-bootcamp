@@ -46,7 +46,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Webdev Bootcamp'
-copyright = u'This work is licensed under a Creative Commons Attribution 4.0 International License'
+copyright = u'Mozilla. This work is licensed under a Creative Commons Attribution 4.0 International License'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
