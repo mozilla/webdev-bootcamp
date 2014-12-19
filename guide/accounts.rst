@@ -38,6 +38,12 @@ assign a bug to yourself or to post a comment on a bug, you'll need to create
 a Bugzilla account. An account also allows you to "CC" yourself on bugs that
 you are interested in, so that you receive emails when those bugs are changed.
 
+After you've been using Bugzilla for a while as a community member,
+it's worthwhile applying for expanded permissions. The editbugs
+permission allows you to assign bugs to yourself and resolve them, for
+example. See the `Bugzilla Permissions Page`_ for details. Note that
+new employees get this permission automatically, no need to ask for it.
+
 .. note:: It's highly recommended to add your IRC nickname to your real name
    within Bugzilla to make it easy for others to auto-complete your name.
 
@@ -46,3 +52,4 @@ you are interested in, so that you receive emails when those bugs are changed.
    ``Cave Johnson [:withthelemons]``.
 
 .. _Bugzilla: https://bugzilla.mozilla.org/
+.. _`Bugzilla Permissions Page`: https://bugzilla.mozilla.org/page.cgi?id=get_permissions.html
