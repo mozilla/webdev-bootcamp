@@ -29,3 +29,11 @@ changed.
 
 .. _pip: https://pip.pypa.io/
 .. _virtualenv: https://virtualenv.pypa.io/
+
+Licensing
+---------
+
+Feel free to fork this repo or adapt its work for your own bootcamp. All work
+is licensed under a `Creative Commons Attribution`_license.
+
+.. _license: https://creativecommons.org/licenses/by/4.0/
