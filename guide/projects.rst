@@ -10,12 +10,12 @@ projects to contribute to:
 
 - The `GetInvolved`_ page lists a curated selection of projects as well as
   information on who to get in contact with if you want to help.
-- If you email the `dev-webdev@lists.mozilla.org mailing list <mailing-list>`_
+- If you email the `dev-webdev@lists.mozilla.org mailing list`_
   with some information on what your skills are and where your interests lie,
   someone may reply with a recommendation.
 
 .. _GetInvolved: https://wiki.mozilla.org/Webdev/GetInvolved
-.. _mailing-list: https://lists.mozilla.org/listinfo/dev-webdev
+.. _`dev-webdev@lists.mozilla.org mailing list`: https://lists.mozilla.org/listinfo/dev-webdev
 
 Getting set up
 --------------
