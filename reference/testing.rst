@@ -30,7 +30,7 @@ A risk assessment lists out the different parts of your project (such as
 certain webpages or parts of an API) and ranks them based on their importance.
 For example, a news site rank being able to read existing articles as more
 important than being able to submit new articles. Ranking these parts allows
-you to make decisions about which to test more and what kind of tests to run.e
+you to make decisions about which to test more and what kind of tests to run.
 
 Unit and integration tests
 --------------------------
