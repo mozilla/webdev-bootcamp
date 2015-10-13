@@ -20,8 +20,7 @@ General Guidelines
 Import Statements
 -----------------
 
-We expand on PEP8_'s suggestions for import statements. These greatly improve
-ones ability to ascertain what is and isn't available in a given file.
+We expand on PEP8_'s suggestions for import statements.
 
 Import one module per import statement::
 
@@ -32,8 +31,8 @@ not::
 
     import os, sys
 
-Separate imports into groups with a line of whitespace: standard library; Django
-(or framework); third-party; and local imports::
+Separate imports into groups with a line of whitespace: standard library;
+third-party; and local imports::
 
     import os
     import sys
