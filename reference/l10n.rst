@@ -20,13 +20,13 @@ intended for a global community.
 
 .. seealso::
 
-   `Mozilla Wiki: Localizing Projects and Content <wiki-L10n-new-project>`_
+   `Mozilla Wiki: Localizing Projects and Content`_
       A short guide on how to start the process of getting a new project
       localized by the Mozilla L10n team.
 
 .. _Jinja2: http://jinja.pocoo.org/
 .. _jingo: https://github.com/jbalogh/jingo
-.. _wiki-L10n-new-project: https://wiki.mozilla.org/L10n:NewProjects
+.. _Mozilla Wiki\: Localizing Projects and Content: https://wiki.mozilla.org/L10n:NewProjects
 
 How does L10n work?
 -------------------
