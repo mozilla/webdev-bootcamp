@@ -20,4 +20,4 @@ Let's get started!
    software
    projects
    development_process
-   best-pratices
+   best-practices

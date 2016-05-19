@@ -1,7 +1,8 @@
-Best practises
+Best practices
 ==============
 
-.. _best_practise-github:
+.. _best-practices-github:
+
 Git and Github
 --------------
 

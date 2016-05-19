@@ -3,7 +3,7 @@ Git and Github
 ==============
 
 This document describes some tips and tricks for using Git and Github.
-There are also some best practises for :ref:`_best_practise-github`.
+There are also some best practices for :ref:`best-practices-github`.
 
 Commit Messages
 ---------------
