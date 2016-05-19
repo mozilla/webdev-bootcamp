@@ -1,4 +1,4 @@
-Best practices
+Best Practices
 ==============
 
 .. _best-practices-github:
