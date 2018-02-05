@@ -5,25 +5,25 @@ We use a few websites to manage our code and bugs, and while it is possible to
 get by without signing up for these sites, it's *strongly* recommended that
 you create accounts on these websites.
 
-Github
+GitHub
 ------
 
-Most Webdev projects are hosted on Github_. Github provides hosting for our
-source code, as well as tools we use for collaboration and code review. Github
+Most Webdev projects are hosted on GitHub_. GitHub provides hosting for our
+source code, as well as tools we use for collaboration and code review. GitHub
 is based on git_, a distributed version control system that lets us track the
 changes we make to our code.
 
-Once you've created a Github account, you can check out the `Github help site`_
-for guides on the basics of using git and Github.
+Once you've created a GitHub account, you can check out the `GitHub help site`_
+for guides on the basics of using git and GitHub.
 
 .. seealso::
 
-   `Mozilla on Github <https://github.com/mozilla/>`_
-      Mozilla's organization account on Github.
+   `Mozilla on GitHub <https://github.com/mozilla/>`_
+      Mozilla's organization account on GitHub.
 
-.. _Github: https://github.com/
-.. _git: http://git-scm.com/
-.. _Github help site: https://help.github.com/
+.. _GitHub: https://github.com/
+.. _git: https://git-scm.com/
+.. _GitHub help site: https://help.github.com/
 
 Bugzilla
 --------

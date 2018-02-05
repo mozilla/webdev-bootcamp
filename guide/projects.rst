@@ -32,7 +32,7 @@ You may also find it useful to find someone who is working on or responsible
 for the project you want to contribute to and asking if they can help you find
 a task to work on and answer any other questions you have. If there's no
 information in the README for a project about who works on it, you can check
-the commit history (available in Github by clicking "# commits" near the top
+the commit history (available in GitHub by clicking "# commits" near the top
 of the page) to find who recently worked on the project, or by asking the
 :doc:`Webdev group <webdev>` who is responsible.
 
@@ -41,7 +41,7 @@ How to contribute
 
 Once you're set up to work on a project, you'll have to find a task to work on
 and get to work! Each project should have some information on where their tasks
-are tracked, whether it be in Bugzilla, Github issues, or some other system.
+are tracked, whether it be in Bugzilla, GitHub issues, or some other system.
 If you're having trouble finding this information, try looking:
 
 - For a ``CONTRIBUTNG`` file in the repository. Many projects use this file

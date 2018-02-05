@@ -3,7 +3,7 @@ Best Practices
 
 .. _best-practices-github:
 
-Git and Github
+Git and GitHub
 --------------
 
 - Create a separate pull request for each bug.

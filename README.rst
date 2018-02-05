@@ -1,6 +1,6 @@
-Mozilla WebDev Bootcamp
+Mozilla Webdev Bootcamp
 =======================
-`View this document at mozweb.readthedocs.org <http://mozweb.readthedocs.org>`_
+`View this document at mozweb.readthedocs.org <https://mozweb.readthedocs.org>`_
 
 A roadmap to success as a web developer contributing to Mozilla. Now with 80%
 more success!
@@ -23,9 +23,9 @@ If you'd like to build the bootcamp locally:
 
 The resulting docs can be located under the ``_build/html`` directory.
 
-You can also run ``make livehtml`` to launch a webserver on
-http://127.0.0.1:8000 that auto-rebuild the documentation when any files are
-changed.
+You can also run ``make livehtml`` to launch a web server on
+http://127.0.0.1:8000 to rebuild the documentation automatically when any
+files are changed.
 
 .. _pip: https://pip.pypa.io/
 .. _virtualenv: https://virtualenv.pypa.io/
@@ -34,6 +34,6 @@ Licensing
 ---------
 
 Feel free to fork this repo or adapt its work for your own bootcamp. All work
-is licensed under a `Creative Commons Attribution`_.
+is licensed under a `Creative Commons Attribution`_ license.
 
 .. _`Creative Commons Attribution`: https://creativecommons.org/licenses/by/4.0/

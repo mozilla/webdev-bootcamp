@@ -223,5 +223,5 @@ man_pages = [
 ]
 
 intersphinx_mapping = dict(
-    playdoh=('http://playdoh.readthedocs.org/en/latest/', None)
+    playdoh=('https://playdoh.readthedocs.io/', None)
     )

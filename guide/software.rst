@@ -21,7 +21,7 @@ If you are running Mac OS X, most of the software mentioned here can be
 installed using the `Homebrew`_ package manager.
 
 .. _VirtualBox: https://www.virtualbox.org/
-.. _Homebrew: http://brew.sh/
+.. _Homebrew: https://brew.sh/
 
 Git
 ---
@@ -34,18 +34,18 @@ same time and merge their changes together at the end.
 .. seealso::
 
    `help.github.com <https://help.github.com/>`_
-      A great guide to getting start with Git and Github, which hosts most of
+      A great guide to getting start with Git and GitHub, which hosts most of
       our git repositories.
 
-   `Github for Windows <https://windows.github.com/>`_
-      A Windows program for interacting with Github as an alternative to using
+   `GitHub for Windows <https://windows.github.com/>`_
+      A Windows program for interacting with GitHub as an alternative to using
       git in a terminal. Useful if you are not used to using a terminal yet.
 
-   `Github for Mac <https://mac.github.com/>`_
-      A Mac OS X program for interacting with Github as an alternative to using
+   `GitHub for Mac <https://mac.github.com/>`_
+      A Mac OS X program for interacting with GitHub as an alternative to using
       git in a terminal. Useful if you are not used to using a terminal yet.
 
-.. _Git: http://git-scm.com/
+.. _Git: https://git-scm.com/
 
 Python
 ------
@@ -59,7 +59,7 @@ of our servers run the sites on Python 2.
 
 .. seealso::
 
-   `The Hitchhiker's Guide to Python <http://docs.python-guide.org/en/latest/>`_
+   `The Hitchhiker's Guide to Python <http://docs.python-guide.org/>`_
       A useful guide for beginner and expert Python developers. If you need to
       install Python on your computer, this guide will help!
 
@@ -75,11 +75,11 @@ as Node applications.
 
 .. seealso::
 
-   `nodejs.org Downloads <http://nodejs.org/download/>`_
+   `nodejs.org Downloads <https://nodejs.org/download/>`_
       The official Node.js download page, which includes installers for Windows
       and Mac OS X.
 
-.. _Node.js: http://nodejs.org/
+.. _Node.js: https://nodejs.org/
 
 Miscellaneous
 -------------------

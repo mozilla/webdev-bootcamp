@@ -90,10 +90,10 @@ General
 - Jenkins_ is a continuous integration server that builds and/or tests software
   projects continuously.
 - `Travis CI`_ is a hosted continuous integration service that integrates with
-  Github.
+  GitHub.
 - Selenium_ is a tool for automating browsers, often for testing purposes.
 
-.. _Jenkins: http://jenkins-ci.org/
+.. _Jenkins: https://jenkins.io/
 .. _Travis CI: https://travis-ci.org/
 
 Python
@@ -107,25 +107,25 @@ Python
 
 - `factory-boy`_ replaces test fixtures with factories that generate test
   objects easily. It integrates with the Django ORM to generate model instances
-  with a very conveninent syntax.
+  with a very convenient syntax.
 
 - Mock_ is one of the most popular libraries for replacing parts of the system
   you're testing with mock objects and asserting things about their behavior.
 
-.. _nose: http://nose.readthedocs.org/en/latest/
+.. _nose: https://nose.readthedocs.io/
 .. _django-nose: https://github.com/django-nose/django-nose
 .. _nose-progressive: https://github.com/erikrose/nose-progressive
-.. _factory-boy: https://factoryboy.readthedocs.org/
+.. _factory-boy: https://factoryboy.readthedocs.io/
 .. _Mock: http://www.voidspace.org.uk/python/mock/
 
 Node / JavaScript
 ^^^^^^^^^^^^^^^^^
 
 - Mocha_ is a framework for running tests on node.js and in the browser.
-- Chai_ is an assertion library with many interfaces to accomodate different
+- Chai_ is an assertion library with many interfaces to accommodate different
   testing styles.
 - Karma_ allows you to execute JavaScript code in multiple real browsers.
 
-.. _Mocha: http://visionmedia.github.io/mocha/
+.. _Mocha: https://mochajs.org/
 .. _Chai: http://chaijs.com/
-.. _Karma: http://karma-runner.github.io
+.. _Karma: https://karma-runner.github.io

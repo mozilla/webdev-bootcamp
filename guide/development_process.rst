@@ -43,20 +43,20 @@ The process of fixing a bug involves:
   updating your changes in response to the review.
 - Merging your feature branch back into the main branch used for development.
 
-Git and Github
+Git and GitHub
 ^^^^^^^^^^^^^^
 
-For projects using Git and Github (which is most Webdev projects), the process
+For projects using Git and GitHub (which is most Webdev projects), the process
 can be explained in more detail:
 
-- On Github, ensure you have `forked the repository`_ for your project to your
+- On GitHub, ensure you have `forked the repository`_ for your project to your
   own account and have added it as a `remote`_ to your repository.
 - Identify the main development branch for your project. This is usually the
   ``master`` branch.
 - Make sure the current branch is the development branch and create a new
   branch off of it for your feature.
 - Once your work is committed and ready for review, `push the branch`_ to your
-  fork on Github and `submit a pull request`_.
+  fork on GitHub and `submit a pull request`_.
 - If you know who should review your change, add a comment to your pull request
   with their ``@Username`` in it and ask for a review (often abbreviated as
   ``r?``).
@@ -67,7 +67,7 @@ can be explained in more detail:
       A glossary of specialized terms used within Webdev, including some
       abbreviations used for code review, such as ``r?``, ``r+``, and ``r-``.
 
-   `Github Flow <https://guides.github.com/introduction/flow/>`_
+   `GitHub Flow <https://guides.github.com/introduction/flow/>`_
       A process for branching, reviewing, and merging code that is very similar
       to the process above.
 

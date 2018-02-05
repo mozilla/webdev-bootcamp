@@ -13,9 +13,9 @@ General Guidelines
 - Check your code against a linting tool. flake8_ is highly recommended for
   this.
 
-.. _PEP8: http://www.python.org/dev/peps/pep-0008/
-.. _flake8: http://flake8.readthedocs.org/en/latest/
-.. _Pocoo: http://www.pocoo.org/internal/styleguide/
+.. _PEP8: https://www.python.org/dev/peps/pep-0008/
+.. _flake8: https://flake8.readthedocs.io/
+.. _Pocoo: https://www.pocoo.org/internal/styleguide/
 
 Import Statements
 -----------------

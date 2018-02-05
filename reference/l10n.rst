@@ -147,11 +147,11 @@ Things to keep in mind
   .. code-block:: jinja
 
      {# WRONG #}
-     {{ _('Check out the new <a href="http://mozilla.org" rel="external">website</a>!') }}
+     {{ _('Check out the new <a href="https://www.mozilla.org/" rel="external">website</a>!') }}
 
      {# RIGHT #}
      {{ _('Check out the new <a {{ link_attrs }}>website</a>!')
-        |fe('href="http://mozilla.org" rel="external"') }}
+        |fe('href="https://www.mozilla.org/" rel="external"') }}
 
 - Languages vary wildly in how they work. Some languages put punctuation at the
   beginning of sentences. Some languages have a different word for 1 item, 3

@@ -9,8 +9,8 @@ define those terms.
 
    pull request
    PR
-      A term for a request on Github to merge some changes into a codebase.
-      Pull requests are the primary place where code review happens for Github
+      A term for a request on GitHub to merge some changes into a codebase.
+      Pull requests are the primary place where code review happens for GitHub
       projects.
 
    r?

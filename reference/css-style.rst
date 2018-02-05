@@ -53,7 +53,7 @@ be a strictly vendor-specific property with no standard implementation, like
 When declaring gradient backgrounds, you don't need to include the `old Webkit
 syntax`_ unless, for some reason, you need to target old versions of Safari.
 
-.. _old Webkit syntax: http://www.webkit.org/blog/175/introducing-css-gradients/
+.. _old Webkit syntax: https://www.webkit.org/blog/175/introducing-css-gradients/
 
 Practice progressive enhancement! Include solid fallback colors for old
 browsers that don't support ``rgba()`` or gradients::
@@ -69,7 +69,7 @@ Hiding content
 Consider screen readers when hiding content. Screen readers will not read
 content that is ``display: none;`` or ``visibility: hidden;``. Hiding something
 visually but not from screen readers requires
-`a bit more CSS <http://webaim.org/techniques/css/invisiblecontent/>`_. Be
+`a bit more CSS <https://webaim.org/techniques/css/invisiblecontent/>`_. Be
 conscientious when choosing your hiding technique.
 
 
@@ -182,7 +182,7 @@ that may be. E.g. ``line-height: 1.4;`` or in a shorthand ``font`` property:
 ``font: 14px/1.4 sans-serif;``. Don't use an absolute unit like ``px`` for
 ``line-height``; it creates more problems than it solves.
 
-.. _unit-less line-height: http://meyerweb.com/eric/thoughts/2006/02/08/unitless-line-heights/
+.. _unit-less line-height: https://meyerweb.com/eric/thoughts/2006/02/08/unitless-line-heights/
 
 Use "`bulletproof font syntax`_" for webfonts. You usually don't need to include
 SVG font files unless your project needs to target older versions of WebKit.
@@ -200,7 +200,7 @@ Example::
     }
 
 
-.. _bulletproof font syntax: http://www.fontspring.com/blog/the-new-bulletproof-font-face-syntax
+.. _bulletproof font syntax: https://blog.fontspring.com/2011/02/the-new-bulletproof-font-face-syntax/
 
 
 Formatting CSS
@@ -561,7 +561,7 @@ LESS vs. Stylus
 
 Many current and past Mozilla websites use `LESS <http://lesscss.org/>`_ as a
 CSS preprocessor. However, LESS appeared to be stagnating for a time and some
-projects moved toward `Stylus <http://learnboost.github.io/stylus/>`_ as an
+projects moved toward `Stylus <http://stylus-lang.com/>`_ as an
 emerging contender under more active development (and also because Stylus has
 some extra features and shares some traits with Python). LESS has since resumed
 more active development, but in an effort to standardize across Mozilla webdev,
@@ -577,7 +577,7 @@ forbidden, but prefer Stylus if you have a choice.
 A Few Words About Stylus
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-On the `Stylus website <http://learnboost.github.io/stylus/>`_, right at the top
+On the `Stylus website <http://stylus-lang.com/>`_, right at the top
 of the home page, the creators crow a lot about how all these required CSS
 syntax bits, like braces and colons and semicolons, are optional in Stylus, as
 if they're a great annoyance that we've all been clamoring to abolish for years.
@@ -620,7 +620,7 @@ document.
 A Note on Sass/SCSS/Compass
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Very few (if any?) Mozilla projects use `Sass <http://sass-lang.com>`_ because
+Very few (if any?) Mozilla projects use `Sass <https://sass-lang.com>`_ because
 it requires Ruby. While Sass is a fine tool, and can be awesome in combination
 with Compass, adding Ruby to our dev stack is a bridge too far. Sorry Rubyists;
 we're a Python shop.
@@ -632,7 +632,7 @@ as well to Sass/SCSS. Live long and prosper.
 Validate!
 ---------
 
-Validate your CSS with the `W3C's online tool <jigsaw.w3.org/css-validator/>`_
+Validate your CSS with the `W3C's online tool <https://github.com/w3c/css-validator>`_
 or equivalent.
 
 Validation tools may report errors or give warnings for vendor prefixes, as they
