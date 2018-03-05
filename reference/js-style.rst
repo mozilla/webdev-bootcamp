@@ -10,10 +10,9 @@ First and Foremost
 
 .. Note::
 
-   There are some exceptions for which JSHint complains about things in node
-   that you can ignore, like how it doesn't know what 'const' is and complains
-   about not knowing what 'require' is. You can add keywords to ignore to a
-   `.jshintrc` file.
+   JSHint may warn about some features of Node.js that aren't present in your
+   typical browser implementation of JavaScript. These can be safely ignored.
+   You can ignore some JSHint warnings permanently with a `.jshintrc` file.
 
 .. _JSHint: http://www.jshint.com/
 
@@ -21,7 +20,7 @@ First and Foremost
 Variable Formatting:
 --------------------
 
-::
+.. code-block:: javascript
 
     // Classes: CapitalizedWords
     var MyClass = ...
@@ -30,11 +29,7 @@ Variable Formatting:
     var myVariable = ...
 
     // Constants: UPPER_CASE_WITH_UNDERSCORES
-    // Backend
     const MY_CONST = ...
-
-    // Client-side
-    var MY_CONST = ...
 
 
 Indentation
@@ -42,7 +37,9 @@ Indentation
 
 4-space indents (no tabs).
 
-For our projects, always assign var on a newline, not comma separated::
+For our projects, always assign var on a newline, not comma separated:
+
+.. code-block:: javascript
 
     // Bad
     var a = 1,
@@ -59,8 +56,10 @@ Use ``[]`` to assign a new array, not ``new Array()``.
 
 Use ``{}`` for new objects, as well.
 
-Two scenarios for ``[]`` (one can be on the same line, with discretion
-and the other not so much)::
+The array literal ``[]`` can be used with either a single line or multiple
+lines, depending how easy it is to read:
+
+.. code-block:: javascript
 
     // Okay on a single line
     var stuff = [1, 2, 3];
@@ -75,15 +74,19 @@ and the other not so much)::
 Never assign multiple variables on the same line
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Bad::
+Example of what not to do:
 
-    var a = 1, b = 'foo', c = 'wtf';
+.. code-block:: javascript
+
+    var a = 1, b = 'foo', c = 'don\'t do this';
 
 
 DO NOT line up variable names
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Bad::
+For consistency, don't do this:
+
+.. code-block:: javascript
 
     var wut    = true;
     var boohoo = false;
@@ -94,14 +97,14 @@ Semi-colons
 
 **Use them.**
 
-Not because ASI is black-magic, or whatever. I'm sure we all understand ASI.
-Just do it for consistency.
+Even though JavaScript can use automatic semicolon insertion (ASI), you should
+still use semi-colons to be consistent with the rest of the codebase.
 
 
 Conditionals and Loops
 ----------------------
 
-::
+.. code-block:: javascript
 
     // Bad
     if (something) doStuff()
@@ -115,56 +118,75 @@ Conditionals and Loops
 Space after keyword, and space before curly
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-::
+.. code-block:: javascript
 
     // Bad
     if(bad){
-
+        // This is bad
     }
 
     // Good
     if (something) {
-
+        // This is better
     }
 
 
 Functions
 ---------
 
-.. _named-functions:
-
 Named Functions
 ~~~~~~~~~~~~~~~
 
-There's no need to explicitly name a function when you're already
-assigning it to a descriptively named symbol::
+You should assign functions to named symbols, like so:
+
+.. code-block:: javascript
 
     var updateOnClick = function() { ... };
 
-...or... ::
+Here, the function above is known as ``updateOnClick``. The same can be done
+with objects. In the example below, ``someObject.updateOnClick`` is the
+function:
 
-    var someObject = {updateOnClick: function() { ... }
+.. code-block:: javascript
 
-Most modern JS engines will infer the name *updateOnClick* for the above
-anonymous function and use it in tracebacks.
+    var someObject = {
+        updateOnClick: function() { ... }
+    };
 
-Of course, if you're passing a nontrivial function as an argument, you
-should still contrive to name it somehow. The meaning here would be
-needlessly obscured if the anonymous function were, for example, 10 lines long::
+If you're passing a nontrivial function as an argument, you should name it to
+avoid obscuring what it's supposed to do.
 
-    .forEach(function() { ... })
+Don't do this:
 
-In such cases, either name the function, or pass a descriptively named
-symbol that points to a function.
+.. code-block:: javascript
+
+    obj.forEach(function(item) {
+        // A large anonymous function with dozens of lines of code.
+        // This makes it hard to understand what the function does
+        // without reading through it entirely.
+    });
+
+Instead, do the following:
+
+.. code-block:: javascript
+
+    var doMagic = function(item) { ... };
+
+    obj.forEach(doMagic);
+
+Here, it is easy to see that ``doMagic`` gets called for each object.
 
 
 Whitespacing Functions
 ~~~~~~~~~~~~~~~~~~~~~~
 
-No space between name and opening paren. Space between closing paren and brace::
+Do not put a space between "function" and the opening parenthesis. Do put a
+space after the closing parenthesis and before the opening curly brace:
+
+.. code-block:: javascript
 
     var method = function(argOne, argTwo) {
-
+        // Do something
     };
 
 
@@ -172,21 +194,23 @@ Anonymous Functions
 ~~~~~~~~~~~~~~~~~~~
 
 Anonymous functions are fine if they have a small amount of code in them. See
-the :ref:`named-functions` section for info about inferred function names for
-anonymous functions.
+the :ref:`named-functions` section for more information about inferred function
+names for anonymous functions.
 
 
 Operators
 ---------
 
-Always use ``===``.
+Always use strict equality (``===``).
 
-Only exception is when testing for null and undefined.
+The only exception to this rule is when testing for null and undefined.
 
-Example::
+Example:
+
+.. code-block:: javascript
 
     if (value != null) {
-
+        // This is an exception to the rule. Usually you'd use !==
     }
 
 
@@ -195,13 +219,15 @@ Quotes
 
 Always use single quotes: ``'not double'``
 
-Only exception: ``"don't escape single quotes in strings. use double quotes"``
+There is only one exception: ``"don't escape single quotes in strings; use double quotes instead"``
 
 
 Comments
 --------
 
-For node functions, always provide a clear comment in this format::
+For Node.js functions, always provide a clear comment in this format:
+
+.. code-block:: javascript
 
     /* Briefly explains what this does
      * Expects: whatever parameters
@@ -209,18 +235,23 @@ For node functions, always provide a clear comment in this format::
      */
 
 
-If comments are really long, also do it in the ``/* ... */`` format like above.
-Otherwise make short comments like::
+If your comment is really long, use the format mentioned above (``/* ... */``).
+Otherwise make short comments like so:
 
-    // This is my short comment and it ends in a period.
+.. code-block:: javascript
+
+    // This is a short comment that ends in a period.
 
 
 Ternaries
 ---------
 
-Try not to use them.
+Avoid using the ternary operator (``(condition) ? (true) : (false)``).
 
-If a ternary uses multiple lines, don't use a ternary::
+If using the ternary operator makes a line particularly complex, or would
+require using multiple lines, don't use it:
+
+.. code-block:: javascript
 
     // Bad
     var foo = (user.lastLogin > new Date().getTime() - 16000) ? user.lastLogin - 24000 : 'wut';
@@ -232,22 +263,22 @@ If a ternary uses multiple lines, don't use a ternary::
 General Good Practices
 ----------------------
 
-If you see yourself repeating something that can be a constant, refactor it as a
-single constant declaration at the top of the file.
+* Don't repeat yourself! If you see yourself repeating something that could be
+  a constant, refactor it as a single constant declaration at the top of the
+  file.
+* Try caching your regular expressions (regex) by declaring them as constants.
+* Always check for truthiness:
 
-Cache regex into a constant.
+  .. code-block:: javascript
 
-Always check for truthiness::
+      // Bad
+      if (blah !== false) { ... }
 
-    // Bad
-    if (blah !== false) { ...
+      // Good
+      if (blah) { ... }
 
-    // Good
-    if (blah) { ...
-
-
-If code is really long, try to break it up to the next line or refactor (try to
-keep within the 80-col limit but if you go a bit past it's not a big deal).
-Indent the subsequent lines one indent (2-spaces) in.
-
-If it looks too clever, it probably is, so just make it simple.
+* If one line in your code is really long, you should probably refactor it. If
+  this isn't possible, try breaking it up into multiple lines.
+* Try to keep within the 80-column limit (but if you go a bit past it's not a
+  big deal). Indent the subsequent lines one indent (2-spaces) in.
+* If it looks too clever, it probably is, so just make it simple.
