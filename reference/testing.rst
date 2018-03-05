@@ -27,45 +27,48 @@ than others. Also, some parts of your project are more important than others,
 and it may be more harmful for them to fail than less important parts.
 
 A risk assessment lists out the different parts of your project (such as
-certain webpages or parts of an API) and ranks them based on their importance.
-For example, a news site rank being able to read existing articles as more
-important than being able to submit new articles. Ranking these parts allows
-you to make decisions about which to test more and what kind of tests to run.
+certain web pages or parts of an API) and ranks them based on their importance.
+For example, a news site would rank being able to read existing articles as more
+important than being able to submit new articles. This kind of ranking allows
+you to make better decisions about which parts of your project to test more and
+what kind of tests to run.
 
 Unit and integration tests
 --------------------------
 
-As a developer, the most common type of tests you will write are unit and
+As a developer, the most common type of tests you will write are unit tests and
 integration tests. Unit tests test the smallest possible chunk of functionality
-and are isolated from eachother. Integration tests test the interaction between
-these chunks.
+and are isolated from each other, whereas integration tests test the interaction
+between these chunks.
 
 In practice, **any changes you make to a project should be tested in some
 automated way if it's reasonable to do so.** While each project varies,
 generally Webdev isn't picky about having perfect unit tests or perfect test
-isolation. If you're unsure, look at existing tests for the project for
+isolation. If you're unsure, look at the project's existing tests for
 guidance on the preferred style.
 
-Mozilla runs a `Jenkins server <https://ci.mozilla.org/>`_ for running these
-tests automatically for several projects. Other projects rely on `Travis CI`_
-for executing their tests.
+Mozilla uses `TaskCluster`_ to run these tests automatically for continuous
+integration. Other projects rely on `Travis CI`_ for executing their tests.
 
 For Django projects, these tests live within the ``tests`` module of each
 included Django application. For Node-based projects, they normally live in
 a directory named ``test`` or ``tests`` at the root of the repository. Refer to
 your project's documentation for more details.
 
+.. _TaskCluster: https://docs.taskcluster.net/
+
 End-to-end tests
 ----------------
 
-End-to-end tests simulates how your project will be used by users and verifies
+End-to-end tests simulate how your project will be used by end users and verify
 that it behaves as expected. This is most commonly applied to websites, where
-we use tools like Selenium_ to simulate users interacting with the website.
+we use tools like `Selenium`_ to simulate users interacting with the website.
 
-For many sites, these tests are written by WebQA contributors and run against
-the various :doc:`server environments <servers>`.
+For many sites, these tests are written by `Web QA`_ contributors and run
+against the various :doc:`server environments <servers>`.
 
 .. _Selenium: https://wiki.mozilla.org/Websites/Domain_List
+.. _Web QA: https://blog.mozilla.org/webqa/
 
 Manual testing
 --------------
@@ -105,8 +108,8 @@ Python
    - `nose-progressive`_ is a nose plugin that makes test output much easier
      to read.
 
-- `factory-boy`_ replaces test fixtures with factories that generate test
-  objects easily. It integrates with the Django ORM to generate model instances
+- `factory_boy`_ replaces test fixtures with factories that generate test
+  objects easily. It integrates with the `Django ORM`_ to generate model instances
   with a very convenient syntax.
 
 - Mock_ is one of the most popular libraries for replacing parts of the system
@@ -115,13 +118,14 @@ Python
 .. _nose: https://nose.readthedocs.io/
 .. _django-nose: https://github.com/django-nose/django-nose
 .. _nose-progressive: https://github.com/erikrose/nose-progressive
-.. _factory-boy: https://factoryboy.readthedocs.io/
+.. _factory_boy: https://factoryboy.readthedocs.io/
 .. _Mock: http://www.voidspace.org.uk/python/mock/
+.. _Django ORM: https://docs.djangoproject.com/en/2.0/topics/db/
 
 Node / JavaScript
 ^^^^^^^^^^^^^^^^^
 
-- Mocha_ is a framework for running tests on node.js and in the browser.
+- Mocha_ is a framework for running tests on Node.js and in the browser.
 - Chai_ is an assertion library with many interfaces to accommodate different
   testing styles.
 - Karma_ allows you to execute JavaScript code in multiple real browsers.
