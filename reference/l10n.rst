@@ -2,17 +2,17 @@ Internationalization (i18n) and Localization (L10n)
 ===================================================
 
 Mozilla is a global community, and most of our websites are localized, meaning
-that they are available in multiple languages for users across the world.
+that they are available in multiple languages for many users across the world.
 
 Internationalization is the process of designing software so that it may be
-adapted to different languages and regions, whereas localization is the actual
-process of adapting that software to a specific locale.
+adapted to different languages and regions, whereas localization is the process
+of actually adapting that software to a specific locale.
 
 This document describes what you need to be aware of while developing software
 intended for a global community.
 
-.. note:: The examples in this document are using `Jinja2`_ syntax. While the
-   concepts are generally the same, the exact syntax may differ between
+.. note:: The examples in this document are using the `Jinja2`_ syntax. While
+   the concepts are generally the same, the exact syntax may differ between
    projects.
 
    There are also a few `jingo`_-specific filters being used. Again, be sure
@@ -64,10 +64,10 @@ this file that localizers produce when translating a site.
 There are several different file formats for translation files, but the most
 common ones are:
 
-- `PO files`_ are a format supported by the `GNU gettext`_ program, and are
-  very common and well-supported by tools.
-- `.lang files`_ is a format similar to PO files but simplified. They don't
-  support more advanced features like plural forms.
+- `PO files`_ - a format supported by the `GNU gettext`_ program. It is
+  very common and well-supported by other localization tools.
+- `.lang files`_ - a format similar to PO files, but simplified. It doesn't
+  support the more advanced features like plural forms.
 
 After marking text up for translation, you will typically run some sort of
 extraction process to update these files with the new strings you've added.
